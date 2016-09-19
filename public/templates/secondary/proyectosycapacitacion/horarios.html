@@ -1,0 +1,27 @@
+
+<div id="proyectosycapacitacionHorariosDiv" ng-if="!!$root.proyectosycapacitacionhorarioLista" >
+	
+	<div ng-repeat="dia in $parent.range track by $index" class="proyectosycapacitacionHorariosDiaDiv">
+		<h1 class="proyectosycapacitacionHorariosDiaHeading">
+			{{dia}} {{daysweek[$index]}}
+		</h1>
+		<div class="proyectosycapacitacionHorariosJornadaDiv">
+			<h2 class="proyectosycapacitacionHorariosJornadaHeading">Mañana</h2>
+			<div ng-repeat="foto in $parent.fotos[dia+'-am']">
+				<a ng-href="{{foto.img!='void300x200.png' ? './fotos/proyectosycapacitacion/cursos/'+foto.img : ''}}" target="_blank"><img ng-src="./fotos/proyectosycapacitacion/cursos/{{foto.img}}" style="width:100%"></img></a>
+			</div>
+		</div>
+		<div class="separador"></div>
+		<div class="proyectosycapacitacionHorariosJornadaDiv">
+			<h2 class="proyectosycapacitacionHorariosJornadaHeading">Tarde</h2>
+			<div ng-repeat="foto in $parent.fotos[dia+'-pm']">
+				<a ng-href="{{foto.img!='void300x200.png' ? './fotos/proyectosycapacitacion/cursos/'+foto.img : ''}}" target="_blank"><img ng-src="./fotos/proyectosycapacitacion/cursos/{{foto.img}}" style="width:100%"></img></a>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+<div style="clear:both;"></div>

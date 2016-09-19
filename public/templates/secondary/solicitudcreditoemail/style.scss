@@ -1,0 +1,44 @@
+h1{
+	color:rgba(52,55,113,1);
+	clear:both;
+}
+h2,h3,h4,h5,h6{
+	color:rgba(31,32,92,1);
+	clear:both;
+}
+p{
+	color:rgba(80,80,80,1);
+}
+a{
+	color:rgba(52,55,113,1);
+	text-decoration:none;
+	white-space:nowrap;
+}
+a:hover{
+	color:rgba(51,124,66,1);
+}
+li{
+	list-style-position:inside;
+}
+#body{
+	position:relative;
+	color:rgba(100,100,100,1);
+	font-family:"arial";
+	margin:0px;
+	background-attachment:fixed;
+	background:rgba(255,255,255,1);
+	opacity:1;
+	padding-left:1%;
+	padding-right:1%;
+}
+.separador{
+	background:rgba(52,55,113,1);
+	color:rgba(255,255,255,1);
+	clear:both;
+	margin-bottom:5px;
+	vertical-align:middle;
+	height:2px;
+	display:block;
+	text-align:center;
+	width:100%;
+}

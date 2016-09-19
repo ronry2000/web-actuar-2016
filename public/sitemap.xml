@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>http://actuartolima.com/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/conocenos/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/conocenos/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/conocenos/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/conocenos/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/contacto/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/contacto/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/contacto/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/contacto/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/impactosocial/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/impactosocial/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/impactosocial/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/impactosocial/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/indicadores/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/indicadores/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/indicadores/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/indicadores/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/lineasdecredito/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/lineasdecredito/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/lineasdecredito/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/lineasdecredito/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/nuestrasoficinas/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/nuestrasoficinas/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/nuestrasoficinas/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/nuestrasoficinas/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/proyectosycapacitacion/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/proyectosycapacitacion/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/proyectosycapacitacion/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/proyectosycapacitacion/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/solicitarcredito/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/solicitarcredito/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/solicitarcredito/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/solicitarcredito/"/>
+	<changefreq>daily</changefreq>
+</url>
+<url>
+	<loc>http://actuartolima.com/trabajaconnosotros/</loc>
+	<xhtml:link rel="alternate" hreflang="x-default" href="http://actuartolima.com/trabajaconnosotros/"/>
+	<xhtml:link rel="alternate" hreflang="es" href="http://actuartolima.com/trabajaconnosotros/"/>
+	<xhtml:link rel="alternate" hreflang="en" href="http://en.actuartolima.com/trabajaconnosotros/"/>
+	<changefreq>daily</changefreq>
+</url>

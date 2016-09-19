@@ -1,0 +1,87 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">QUIÉNES SOMOS</span></h1>
+
+
+	
+
+<div id="quienessomosDiv" style="margin-bottom:0px">
+	
+	<div class="quienessomosItemDiv" ng-click="selectItem('NUESTRA HISTORIA')">
+		<h3 style="color:white;margin:0px;">NUESTRA HISTORIA</h3>
+	</div>
+	<div class="quienessomosItemDescDiv" ng-show="$root.conocenosSelected=='NUESTRA HISTORIA'">
+		<div style="background-image:url('./fotos/conocenos/1.jpg');float:left" class="quienessomosItemDescImg"></div>
+		<div style="width:74%;float:right;margin:2%;margin-left:0px;min-height:150px;display:table">
+			<p style="text-align:justify;margin-top:0px;margin-bottom:0px;display:table-cell;vertical-align:middle">
+			La Corporación Acción por el Tolima, Actuar Famiempresas, surge de la iniciativa privada de un grupo de empresarios con el fin 
+			de dar solución a las necesidades de empleo de aquellas personas que a raíz de la tragedia del Volcán Nevado del Ruiz en Armero, 
+			lo perdieron todo.
+			<br><br>
+			Desde su inicio y hasta hoy, Actuar Famiempresas se ha convertido en apoyo financiero especializado en canalizar 
+			recursos de crédito, para que estos sectores de la economía cuenten con una entidad que les permita estructurar y desarrollar sus proyectos 
+			empresariales; también trabaja en procesos de formación empresarial donde se busca que el cliente aprenda a organizar y manejar su negocio.
+			<br><br>
+			Fue creada en noviembre de 1985, pero inicia sus labores en febrero de 1986, contando inicialmente con 57 aportantes locales, regionales y nacionales. 
+			A través de sus 25 años de funcionamiento, Actuar ha hecho presencia en diferentes regiones del Departamento y fuera de él, constituyéndose en 
+			un verdadero motor del micro emprendimiento.
+			</p>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="quienessomosItemDiv" ng-click="selectItem('MISIÓN')">
+		<h3 style="color:white;margin:0px;">MISIÓN</h3>
+	</div>
+	<div class="quienessomosItemDescDiv" ng-show="$root.conocenosSelected=='MISIÓN'">
+		<div style="background-image:url('./fotos/conocenos/2.jpg');float:right" class="quienessomosItemDescImg"></div>
+		<div style="width:74%;float:left;margin:2%;margin-right:0px;min-height:150px;display:table">
+			<p style="text-align:justify;margin:0px;display:table-cell;vertical-align:middle">
+			Promover el desarrollo económico y social de la comunidad microempresarial de la región(Departamentos del Tolima y Huila y el municipio de Girardot y zonas de influencia), 
+			con el fin de alcanzar la consolidación de sus unidades productivas y el mejoramiento de su nivel de vida. 
+			</p>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="quienessomosItemDiv" ng-click="selectItem('VISIÓN')">
+		<h3 style="color:white;margin:0px;">VISIÓN</h3>
+	</div>
+	<div class="quienessomosItemDescDiv" ng-show="$root.conocenosSelected=='VISIÓN'">
+		<div style="background-image:url('./fotos/conocenos/3.jpg');float:left" class="quienessomosItemDescImg"></div>
+		<div style="width:74%;float:right;margin:2%;margin-left:0px;min-height:150px;display:table">
+		<p style="text-align:justify;margin:0px;display:table-cell;vertical-align:middle">
+		Ser una entidad altamente competitiva en el ámbito regional liderando e innovando permanentemente nuestros productos y servicios de crédito, 
+		capacitación y asesoría contando con una planta de personal comprometida con los objetivos de la institución.
+		</p>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="quienessomosItemDiv" style="margin-bottom:0px" ng-click="selectItem('POLÍTICA DE CALIDAD')">
+		<h3 style="color:white;margin:0px;">POLÍTICA DE CALIDAD</h3>
+	</div>
+	<div class="quienessomosItemDescDiv" style="margin-top:10px;margin-bottom:0px" ng-show="$root.conocenosSelected=='POLÍTICA DE CALIDAD'">
+		<div style="background-image:url('./fotos/conocenos/4.jpg');float:right" class="quienessomosItemDescImg"></div>
+		<div style="width:74%;float:left;margin:2%;margin-right:0px;min-height:150px;display:table">
+		<p style="text-align:justify;margin:0px;display:table-cell;vertical-align:middle">
+		Brindar servicios de crédito y capacitación de manera oportuna, satisfaciendo las necesidades de nuestros clientes, contando con un equipo 
+		humano competente que permita la mejora continua de nuestros procesos y el cumplimiento de los requisitos de la corporación.
+		</p>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	
+
+</div>
+
+<div id="{{lista.titulo}}" ng-repeat="lista in videos" ng-if="!!videos && false" class="videoDiv" ng-mouseover="mouseOverVideoDiv[lista.titulo]=true" ng-mouseleave="mouseOverVideoDiv[lista.titulo]=false">
+	<div ng-click="videoDivClicked(lista.titulo);" class="videoDivButton">
+		<img ng-show="lista.titulo!=activeVideoDiv" class="videoLogo" ng-src="{{mouseOverVideoDiv[lista.titulo] ? './img/logo.png':'./img/logo2.png'}}" alt="actuar tolima" longdesc="#footerDiv"></img>
+		{{lista.titulo}}
+		
+	</div>
+	<iframe ng-if="lista.titulo!=activeVideoDiv" class="videoIframe" src="{{trustSrc(lista.url)}}" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+
+
+
+
+<div style="clear:both;"></div>

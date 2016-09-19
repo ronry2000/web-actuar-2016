@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="es" ng-app="local" >
+	<head ng-controller="appHeadCtrl">
+		
+		<base href="/">
+		<meta name="description" content="Corporación Acción por el Tolima, apoyo financiero a la medida del empresario">
+		<meta name="keywords" content="Actuar tolima">
+		<meta name="copyright" content="copyleft"/>
+		<meta http-equiv="content-language" content="es">
+		<meta property="og:url" content="http://181.128.237.81/"/>
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Actuar Tolima" />
+		<meta property="og:description" content="Corporación Acción por el Tolima, apoyo financiero a la medida del empresario" />
+		<meta property="og:image" content="http://181.128.237.81/img/logo.png" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes,maximum-scale=2,minimum-scale=0.1">
+		<title ng-bind="Page.title()">Actuar Tolima</title>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoSd_UUR5Q1gx2TtahNo6WcW72N4JKoFQ"></script>
+		
+		
+		
+		<link rel="stylesheet" href="./min.css">
+		<link rel="stylesheet" href="./mobilemin.css" media="all and (max-width:800px)">
+		<link rel="stylesheet" href="./css/impresion.css" media="print">
+		<script type="text/javascript" src="./min.js"></script>
+		
+		
+		<!--This is a comment. Comments are not displayed in the browser
+		
+		
+		
+		
+		
+		-->
+		
+	</head>
+	<body ng-controller="appController">
+		<div id="fb-root"></div>
+		<script async>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/es_CO/sdk.js#xfbml=1&version=v2.5";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+		
+		<div id="principal">
+			<div id="divBackground"></div>
+			
+			<div class="topBar">
+				<p class="topBarItem"><a ng-href="./" hreflang="es" rel="bookmark"><img ng-src="./img/home.png" alt="actuar tolima" longdesc="#footerDiv"></img>&nbspInicio</a>&nbsp&nbsp&nbsp</p>
+				<p class="topBarItem"><a ng-href="./trabajaconnosotros" style="white-space:normal" hreflang="es" rel="bookmark"><img ng-src="./img/suitcase.png" alt="actuar tolima" longdesc="#footerDiv" ></img>&nbspTrabaja con nosotros</a>&nbsp&nbsp&nbsp</p>
+				<p class="topBarItem"><a ng-href="./contacto" hreflang="es" rel="bookmark"><img ng-src="./img/phone.png" alt="actuar tolima" longdesc="#footerDiv"></img>&nbspContáctanos</a></p>
+			</div>
+			
+			<a ng-href="./" hreflang="es" rel="bookmark"><img ng-src="./img/logoactuartolima.png" id="logoActuarTolima" alt="actuar tolima" longdesc="#footerDiv"></image></a>
+			
+			
+			
+			<div id="header">
+				<div class="headerMenu" ng-click="$root.menuClicked()"><img ng-src="./img/menu.png" height="100%"></img></div>
+				<a ng-href="./lineasdecredito" hreflang="es" rel="bookmark"><h1 class="headerItem" ng-if="$root.menuOpened">LÍNEAS DE CRÉDITO</h1></a>
+				<a ng-href="./impactosocial" hreflang="es" rel="bookmark"><h1 class="headerItem" ng-if="$root.menuOpened">IMPACTO SOCIAL</h1></a>
+				<a ng-href="./proyectosycapacitacion" hreflang="es" rel="bookmark"><h1 class="headerItem" ng-if="$root.menuOpened">PROYECTOS Y CAPACITACIÓN</h1></a>
+				<a ng-href="./indicadores" hreflang="es" rel="bookmark"><h1 class="headerItem" ng-if="$root.menuOpened">INDICADORES</h1></a>
+				<a ng-href="./conocenos" hreflang="es" rel="bookmark"><h1 class="headerItem" ng-if="$root.menuOpened">QUIÉNES SOMOS</h1></a>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div ng-view onload="onload()"></div>
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		
+		<footer>
+			<div id="footerDiv" >
+				<a class="footerDivItem" ng-href="./nuestrasoficinas" hreflang="es" rel="bookmark">&nbsp<img ng-src="./img/logomapsmark.png" alt="actuar tolima" longdesc="#footerDiv" style="vertical-align:top"></img>&nbspNuestras oficinas</a>
+				<a class="footerDivItem" ng-href="./contacto" hreflang="es" rel="bookmark"><img ng-src="./img/phone.png" alt="actuar tolima" longdesc="#footerDiv" style="vertical-align:top"></img>&nbspContáctanos</a>
+				<a class="footerDivItem" ng-href="./trabajaconnosotros" hreflang="es" rel="bookmark"><img ng-src="./img/suitcase.png" alt="actuar tolima" longdesc="#footerDiv" ></img>&nbspTrabaja con nosotros</a>
+				<a class="footerDivItem" ng-href="./sitemap" hreflang="es" rel="bookmark"><img ng-src="./img/sitemap.png" alt="actuar tolima" longdesc="#footerDiv" ></img>&nbspMapa del sitio</a>
+				<a class="footerDivItem" ng-href="./login" hreflang="es" rel="bookmark"><img ng-src="./img/login.png" alt="actuar tolima" longdesc="#footerDiv" style="vertical-align:top"></img>&nbspLogin</a>
+				
+				
+				
+			</div>
+			
+			<div id="footerSigenosDiv">
+				<p style="margin:0px;color:white;">Síguenos en</p>
+				<a href="https://twitter.com/ActuarTolima" target="_blank" hreflang="es" rel="author"><img id="twitterImg" ng-src="./img/logotwitter.png" style="float:right;" alt="actuar tolima" longdesc="#footerDiv"></img></a>
+				<a href="https://www.instagram.com/actuartolima/" target="_blank" hreflang="es" rel="author"><img id="instagramImg" ng-src="./img/logoinstagram.png" style="float:right;" alt="actuar tolima" longdesc="#footerDiv"></img></a>
+				<img id="fbkContainerImg" ng-click="fbkToggle()" ng-src="./img/logofbk3.png" style="float:right;cursor:pointer" alt="actuar tolima" longdesc="#footerDiv"></img>
+				<div class="fb-share-button" style="float:right;margin-right:5px;margin-top:5px" data-href="http://181.128.237.81/" data-layout="button"></div>
+				
+			</div>
+			<div class="fbkDivFloating" id="wallfluxDiv" ng-if="$root.fbkDivFloating"><iframe id="wallflux" name="iframe" src="./wallflux.html" width="100%;" height="100%" frameborder="0"> </iframe></div>
+			<div class="fbkDivFloating2" id="fbkDiv" ng-show="$root.fbkDivFloating"><div class="fb-page" data-href="https://www.facebook.com/olgalucia.correanova" data-tabs="timeline" data-width="300px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/olgalucia.correanova"><a href="https://www.facebook.com/olgalucia.correanova">Actuar Tolima Capacitacion</a></blockquote></div></div></div>
+			
+			
+			<img ng-src="./img/logo.png" id="footerImg" alt="actuar tolima" longdesc="#footerDiv"></img>
+				<div id="infoFooterDiv">
+				<div class="vcard" style="direction:rtl;">
+					<div class="fn org" style="font-family:appBold">ACTUAR&nbspTOLIMA</div>
+					<div><span style="vertical-align:top">Teléfonos:&nbsp</span><span class="tel" style="font-size:150%;white-space: nowrap">261&nbsp66&nbsp40<br></br> 261&nbsp79&nbsp06</span></div>
+					<div><span style="vertical-align:top">Email:&nbsp</span><span class="email">info@actuartolima.com</span></div>
+				</div>
+			</div>
+			
+		
+		</footer>
+	</body>
+	
+</html>
+

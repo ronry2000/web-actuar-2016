@@ -1,0 +1,5 @@
+
+
+{
+"required_permissions": [ "tabs", "http://www.google.com/" ]
+}

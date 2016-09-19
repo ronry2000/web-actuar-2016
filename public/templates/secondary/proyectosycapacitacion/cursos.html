@@ -1,0 +1,37 @@
+<div id="proyectosycapacitacionListaDiv" ng-if="!!$root.proyectosycapacitacionLista && !!$root.proyectosycapacitacionSliderFotos" >
+		<table ng-repeat="lista in $root.proyectosycapacitacionLista.lista" class="proyectosycapacitacionTable" style="width:100%">
+		
+			<tr class="proyectosycapacitacionTableRow" id="{{lista.grupo}}">
+				<td colspan="2">
+					<h3 style="margin:0px;padding-top:18px;padding-bottom:18px;cursor:pointer" ng-click="selectGrupo(lista.grupo)"><img ng-src="{{lista.grupo==$root.proyectosycapacitacionCursosSelected ? './img/less.png' : './img/more.png'}}" style="vertical-align:middle;" alt="actuar tolima" longdesc="#footerDiv"></img> {{lista.area}}</h3>
+				</td>
+			</tr>
+			
+			<tr class="proyectosycapacitacionTableRow" ng-repeat="item in lista.items" ng-show="lista.grupo==$root.proyectosycapacitacionCursosSelected" >
+				<td style="position:relative">
+					<li ng-click="selectItem(item.titulo)">{{item.titulo}}</li>
+					<div class="proyectosycapacitacionCursoDescDiv" ng-if="item.titulo==$root.proyectosycapacitacionCursosItemSelected && false">
+						<p class="proyectosycapacitacionCursoDesc">{{item.desc}}</p>
+						<img width="100%" style="opacity:0.1"ng-src="{{item.img}}"></img>
+						
+						
+					</div>
+				</td>
+				<td style="text-align:right;display:none"><p class="proyectosycapacitacionInfoP" style="vertical-align:text-bottom;">{{item.horas}}</p></td>
+			</tr>
+			
+		</table>
+	
+</div>
+<div class="proyectosycapacitacionSliderDivAux">
+<div id="proyectosycapacitacionSliderDiv" ng-if="!!$root.proyectosycapacitacionSliderFotos" ng-class="(activeSlider=='/proyectosycapacitacion' && $root.proyectosycapacitacionTabSelected=='cursos') ? 'proyectosycapacitacionSliderDiv' : 'proyectosycapacitacionSliderDiv2'" ng-controller="sliderController">
+				<p5 sketch="proyectosycapacitacionSliderSketchFac">
+					<div id="proyectosycapacitacionSliderCanvasDiv" ></div>
+				</p5>
+			</div>
+</div>
+
+
+
+
+<div style="clear:both;"></div>

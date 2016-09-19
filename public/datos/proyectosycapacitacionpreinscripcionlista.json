@@ -1,0 +1,56 @@
+{
+	"lista": [
+		{
+			"curso": "Sistemas Nivel II",
+			"img": "Sistemas_Nivel_II.jpg",
+			"horario": "Lunes-am.Martes-pm"
+		},
+		{
+			"curso": "Elaboración de champú, crema para manos, etc",
+			"img": "Elaboración_de_champú,_crema_para_manos,_etc.jpg",
+			"horario": "Miércoles-pm.Jueves-am",
+			"preinscritos": [
+				{
+					"nombre": "eiieeiieee",
+					"email": "",
+					"telefono": "23423423444444"
+				}
+			]
+		},
+		{
+			"curso": "Muñecos navideños",
+			"img": "Muñecos_navideños.jpg",
+			"horario": "Miércoles-pm.Jueves-am"
+		},
+		{
+			"curso": "Tortas y decoración Nivel I y II",
+			"img": "Tortas_y_decoración_Nivel_I-y_II.jpg",
+			"horario": "Miércoles-pm.Sábado-am"
+		},
+		{
+			"curso": "Sistemas Nivel I",
+			"horario": "Martes-pm",
+			"img": "Sistemas_Nivel_I.jpg"
+		},
+		{
+			"curso": "Cocina Italiana",
+			"img": "Cocina_Italiana.jpg",
+			"horario": "Martes-pm.Sábado-am"
+		},
+		{
+			"curso": "Animación en 3D",
+			"img": "Animación_en_3D.jpg",
+			"horario": "Jueves-pm.Miércoles-am.Miércoles-pm"
+		},
+		{
+			"curso": "Mecánica automotriz Nivel I, II y III",
+			"img": "Mecánica_automotriz_Nivel_I,_II_y_III.jpg",
+			"horario": "Lunes-am.Miércoles-am"
+		},
+		{
+			"curso": "Maquillaje, limpieza facial y depilación con cera",
+			"img": "Maquillaje,_limpieza_facial_y_depilación_con_cera.jpg",
+			"horario": "Martes-am"
+		}
+	]
+}

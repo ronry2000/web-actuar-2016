@@ -1,0 +1,55 @@
+{
+	"lista": [
+		{
+			"loc": "./index/",
+			"nodes": [
+				{
+					"loc": "./conocenos/",
+					"nodes": [],
+					"desc": "Quiénes somos"
+				},
+				{
+					"loc": "./contacto/",
+					"nodes": [],
+					"desc": "Contáctanos"
+				},
+				{
+					"loc": "./impactosocial/",
+					"nodes": [],
+					"desc": "Impacto Social"
+				},
+				{
+					"loc": "./indicadores/",
+					"nodes": [],
+					"desc": "Indicadores"
+				},
+				{
+					"loc": "./lineasdecredito/",
+					"nodes": [],
+					"desc": "Líneas de crédito"
+				},
+				{
+					"loc": "./nuestrasoficinas/",
+					"nodes": [],
+					"desc": "Nuestras oficinas"
+				},
+				{
+					"loc": "./proyectosycapacitacion/",
+					"nodes": [],
+					"desc": "Proyectos y capacitación"
+				},
+				{
+					"loc": "./solicitarcredito/",
+					"nodes": [],
+					"desc": "Solicitar crédito"
+				},
+				{
+					"loc": "./trabajaconnosotros/",
+					"nodes": [],
+					"desc": "Trabaja con nosotros"
+				}
+			],
+			"desc": "Inicio"
+		}
+	]
+}

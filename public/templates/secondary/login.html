@@ -1,0 +1,27 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" height="50px" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">ACCESO RESTRINGIDO</span></h1>
+<div id="loginDiv">
+	
+	<form ng-submit="login()">
+		<table id="loginTable">
+			<tr class="loginTableRow"><td colspan="2"><p>Para continuar ingresa tu e-mail y contraseña.</p></td></tr>
+			<tr class="loginTableRow">
+				<td class="loginTableTd"> Correo electrónico </td>
+				<td><input type="email" required class="loginInput" id="loginEmail" ng-model="loginEmail" name="loginEmail" placeholder="" pattern="^[a-z0-9._%+-]{1,50}@[a-z0-9.-]{1,50}\.[a-z]{2,6}$"></td>
+			</tr>
+			<tr class="loginTableRow">
+				<td class="loginTableTd" > Contraseña </td>
+				<td><input type="password" required class="loginInput" id="loginPassword" ng-model="loginPassword" name="loginPassword" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{4,20}$"></td>
+			</tr>
+			<tr class="loginTableRow">
+				<td></td>
+				<td><input id="loginbutton" type="submit" class="submitButton" ></input></td>
+			</tr>
+		</table>
+	</form>
+	<div id="loginErrorDiv" style="max-width:100%;overflow:auto"></div>
+	<input id="logoutButton" type="submit" class="submitButton" value="salir" ng-click="logout()" style="display:none;margin-right:20px"></input>
+	<a ng-href="./intranet"><input id="intranetButton" type="submit" class="submitButton" value="continuar" style="display:none;"></input></a>
+</div>
+
+
+<div style="clear:both;"></div>

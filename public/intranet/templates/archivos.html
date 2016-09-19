@@ -1,0 +1,26 @@
+<div oc-lazy-load="['./intranet/scripts/intranetarchivoscontroller.js']">
+<div ng-controller="intranetarchivosController" style="margin-left:1%;margin-right:1%">
+	<div id="archivosErrorDiv" style="max-width:100%;overflow:auto;" ng-if="$root.user.accesibilidad=='administrador' || $root.user.accesibilidad=='gestioncalidad'">{{"destino seleccionado: "+(path || "ninguno")}}</div>
+	
+	<div id="intranetarchivosDiv" >
+		<treecontrol class="tree-classic"
+			tree-model="intranetarchivosdocumentosLista.lista"
+			options="treeOptions"
+			selected-node="selectedNodes"
+			expanded-nodes="expandedNodes"
+			on-selection="onselected(node, selected, $parentNode, $index, $first, $middle, $last, $odd, $even);showSelected(node)"
+			on-node-toggle="onnodetoggle(node, expanded, $parentNode, $index, $first, $middle, $last, $odd, $even)">
+			<div class="intranetarchivosItem">
+				<a ng-href="{{node.href}}" target="_blank"><span>{{node.nombre}}</span></a>
+				<img ng-src="./img/delete.png" ng-click="deleteArchivo(node)" style="cursor:pointer;vertical-align:top;margin-left:5px;" height="15px" ng-if="isErasable(node)"></img>
+				<div ngf-select="uploadArchivo(node,$file)" ng-model="archivosFile" class="select-box" style="margin-left:5px;" ngf-pattern="'application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ngf-max-size="200MB" ng-if="isInsertable(node) && selectedNode==node.nombre">Seleccionar archivo</div>
+			</div>
+		</treecontrol>
+	</div>
+</div>
+
+
+
+
+<div style="clear:both;"></div>
+</div>

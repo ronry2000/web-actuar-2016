@@ -1,0 +1,560 @@
+{
+	"lista": [
+		{
+			"nombre": "archivos actuar tolima",
+			"href": "",
+			"nodes": [
+				{
+					"nombre": "archivos_gestion_de_calidad",
+					"nodes": [
+						{
+							"nombre": "1-direccionamiento_gerencial",
+							"nodes": [
+								{
+									"nombre": "documentos_direccionamiento_gerencial",
+									"nodes": [
+										{
+											"nombre": "GE-CP-001_CARACTERIZACION_DIREC_GERENCIAL.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/1-direccionamiento_gerencial/documentos_direccionamiento_gerencial/GE-CP-001_CARACTERIZACION_DIREC_GERENCIAL.pdf"
+										},
+										{
+											"nombre": "GE-PR-001_Revisión_gerencial.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/1-direccionamiento_gerencial/documentos_direccionamiento_gerencial/GE-PR-001_Revisión_gerencial.pdf"
+										}
+									]
+								}
+							]
+						},
+						{
+							"nombre": "2-gestion_de_calidad",
+							"nodes": [
+								{
+									"nombre": "documentos_gestion_de_calidad",
+									"nodes": [
+										{
+											"nombre": "ANEXO1_SERVICIO_NO_CONFORME.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/ANEXO1_SERVICIO_NO_CONFORME.pdf"
+										},
+										{
+											"nombre": "GC-CP-001_CARACT_PROCESO_GESTION_CALIDAD.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-CP-001_CARACT_PROCESO_GESTION_CALIDAD.pdf"
+										},
+										{
+											"nombre": "GC-MA-001_Manual_de_calidad.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-MA-001_Manual_de_calidad.pdf"
+										},
+										{
+											"nombre": "GC-PR-001_Control_de_documentos.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-PR-001_Control_de_documentos.pdf"
+										},
+										{
+											"nombre": "GC-PR-002_Control_de_registros.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-PR-002_Control_de_registros.pdf"
+										},
+										{
+											"nombre": "GC-PR-003_Acciones_correct_y_prevent.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-PR-003_Acciones_correct_y_prevent.pdf"
+										},
+										{
+											"nombre": "GC-PR-004_Servicio_no_conforme.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-PR-004_Servicio_no_conforme.pdf"
+										},
+										{
+											"nombre": "GC-PR-005_Medición_de_la_satisfacción_del_cliente.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-PR-005_Medición_de_la_satisfacción_del_cliente.pdf"
+										},
+										{
+											"nombre": "GC-PR-006_Quejas_y_reclamos.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-PR-006_Quejas_y_reclamos.pdf"
+										},
+										{
+											"nombre": "GC-PR-007_Auditorías_internas_calidad.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/2-gestion_de_calidad/documentos_gestion_de_calidad/GC-PR-007_Auditorías_internas_calidad.pdf"
+										}
+									]
+								}
+							]
+						},
+						{
+							"nombre": "3-credito",
+							"nodes": [
+								{
+									"nombre": "documentos_credito",
+									"nodes": [
+										{
+											"nombre": "CR-CP-001_CARACTERIZ_PROCESO_CREDITO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/3-credito/documentos_credito/CR-CP-001_CARACTERIZ_PROCESO_CREDITO.pdf"
+										},
+										{
+											"nombre": "CR-IN-001_INSTRUCTIVO_DE_DESEMBOLSO_DE_CREDITOS.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/3-credito/documentos_credito/CR-IN-001_INSTRUCTIVO_DE_DESEMBOLSO_DE_CREDITOS.pdf"
+										},
+										{
+											"nombre": "CR-MA-001_Manual_de_Crédito.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/3-credito/documentos_credito/CR-MA-001_Manual_de_Crédito.pdf"
+										},
+										{
+											"nombre": "CR-PR-001_Solicitud_de_crédito.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/3-credito/documentos_credito/CR-PR-001_Solicitud_de_crédito.pdf"
+										}
+									]
+								}
+							]
+						},
+						{
+							"nombre": "4-capacitacion",
+							"nodes": [
+								{
+									"nombre": "documentos_capacitacion",
+									"nodes": [
+										{
+											"nombre": "CP-CP-001_CARACTERIZ_PROCESO_CAPACITACION.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/4-capacitacion/documentos_capacitacion/CP-CP-001_CARACTERIZ_PROCESO_CAPACITACION.pdf"
+										},
+										{
+											"nombre": "CP-PR-001_Capacitación.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/4-capacitacion/documentos_capacitacion/CP-PR-001_Capacitación.pdf"
+										}
+									]
+								}
+							]
+						},
+						{
+							"nombre": "5-cartera",
+							"nodes": [
+								{
+									"nombre": "documentos_cartera",
+									"nodes": [
+										{
+											"nombre": "CA-CP-001_CARACT_PROCESO_CARTERA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/5-cartera/documentos_cartera/CA-CP-001_CARACT_PROCESO_CARTERA.pdf"
+										},
+										{
+											"nombre": "CA-MA-001_MANUAL_DE_COBRANZA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/5-cartera/documentos_cartera/CA-MA-001_MANUAL_DE_COBRANZA.pdf"
+										},
+										{
+											"nombre": "CA-PR-001_COBRO_CARTERA_MOROSA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/5-cartera/documentos_cartera/CA-PR-001_COBRO_CARTERA_MOROSA.pdf"
+										},
+										{
+											"nombre": "CA-PR-002_Reclamación_FRG.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/5-cartera/documentos_cartera/CA-PR-002_Reclamación_FRG.pdf"
+										},
+										{
+											"nombre": "CA-PR-003_Castigo_de_Cartera.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/5-cartera/documentos_cartera/CA-PR-003_Castigo_de_Cartera.pdf"
+										},
+										{
+											"nombre": "CA-VA-001_POLITICA_CASTIGO_CARTERA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/5-cartera/documentos_cartera/CA-VA-001_POLITICA_CASTIGO_CARTERA.pdf"
+										}
+									]
+								}
+							]
+						},
+						{
+							"nombre": "6-administrativo_y_financiero",
+							"nodes": [
+								{
+									"nombre": "documentos_administrativo_y_financiero",
+									"nodes": [
+										{
+											"nombre": "AF-CP-001CARACTERI_PROCESO_ADMIN_FINAN.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-CP-001CARACTERI_PROCESO_ADMIN_FINAN.pdf"
+										},
+										{
+											"nombre": "AF-IN-004_Instructivo_para_revisión_de_pagarés.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-IN-004_Instructivo_para_revisión_de_pagarés.pdf"
+										},
+										{
+											"nombre": "AF-IN-005_Instructivo_de_liquidación_de_créditos.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-IN-005_Instructivo_de_liquidación_de_créditos.pdf"
+										},
+										{
+											"nombre": "AF-MA-001_Manual_caja_menor.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-MA-001_Manual_caja_menor.pdf"
+										},
+										{
+											"nombre": "AF-MA-002_MANUAL_MANEJO_CAJA_GENRAL.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-MA-002_MANUAL_MANEJO_CAJA_GENRAL.pdf"
+										},
+										{
+											"nombre": "AF-MA-003_Man_manej_pag_doc_sop_crédito.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-MA-003_Man_manej_pag_doc_sop_crédito.pdf"
+										},
+										{
+											"nombre": "AF-PR-001_DESEMBOLSO_CREDITOS.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-001_DESEMBOLSO_CREDITOS.pdf"
+										},
+										{
+											"nombre": "AF-PR-002_Recaudo_dinero.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-002_Recaudo_dinero.pdf"
+										},
+										{
+											"nombre": "AF-PR-003_ANEXO_Solic_legaliz_recursos.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-003_ANEXO_Solic_legaliz_recursos.pdf"
+										},
+										{
+											"nombre": "AF-PR-003_Solicitud_legalización_recursos.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-003_Solicitud_legalización_recursos.pdf"
+										},
+										{
+											"nombre": "AF-PR-004_Compras.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-004_Compras.pdf"
+										},
+										{
+											"nombre": "AF-PR-005_Selec_evaluac_re-evaluac_proveed.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-005_Selec_evaluac_re-evaluac_proveed.pdf"
+										},
+										{
+											"nombre": "AF-PR-006_Procedimiento_Arqueo_Caja.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-006_Procedimiento_Arqueo_Caja.pdf"
+										},
+										{
+											"nombre": "AF-PR-010_Recaudo_externo.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-010_Recaudo_externo.pdf"
+										},
+										{
+											"nombre": "AF-PR-011_Recaudo_externo_por_Efecty.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/AF-PR-011_Recaudo_externo_por_Efecty.pdf"
+										},
+										{
+											"nombre": "ANEXO_PROCESOS_CUSTODIAS.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/6-administrativo_y_financiero/documentos_administrativo_y_financiero/ANEXO_PROCESOS_CUSTODIAS.pdf"
+										}
+									]
+								}
+							]
+						},
+						{
+							"nombre": "7-gestion_humana",
+							"nodes": [
+								{
+									"nombre": "documentos_gestion_humana",
+									"nodes": [
+										{
+											"nombre": "GH-CP-001_CARACT_PROC_GEST_HUM.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-CP-001_CARACT_PROC_GEST_HUM.pdf"
+										},
+										{
+											"nombre": "GH-IN 002_INSTRUCTIVO_DE_INDUCCION_DE_PERSONAL.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-IN 002_INSTRUCTIVO_DE_INDUCCION_DE_PERSONAL.pdf"
+										},
+										{
+											"nombre": "GH-IN-001_INSTRUCTIVO_RETIRO_DE_FUNCIONARIOS.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-IN-001_INSTRUCTIVO_RETIRO_DE_FUNCIONARIOS.pdf"
+										},
+										{
+											"nombre": "GH-MA-005_SECRETARIA_ADMINISTRATIVA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-MA-005_SECRETARIA_ADMINISTRATIVA.pdf"
+										},
+										{
+											"nombre": "GH-PR-001_Selección_personal.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-PR-001_Selección_personal.pdf"
+										},
+										{
+											"nombre": "GH-PR-002_Inducción_personal.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-PR-002_Inducción_personal.pdf"
+										},
+										{
+											"nombre": "GH-PR-003_CAPACITACION_PERSONAL.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-PR-003_CAPACITACION_PERSONAL.pdf"
+										},
+										{
+											"nombre": "GH-PR-004_Evaluación_personal.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-PR-004_Evaluación_personal.pdf"
+										},
+										{
+											"nombre": "GH-PR-005_Liquidación_nomina.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-PR-005_Liquidación_nomina.pdf"
+										},
+										{
+											"nombre": "GH-PR-006_INSPECCIONES_DE_SEGURIDAD.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-PR-006_INSPECCIONES_DE_SEGURIDAD.pdf"
+										},
+										{
+											"nombre": "GH-PR-007_REPORTE_DE_ACCIDENTES_O_INCIDENTES_DE_TRABAJO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-PR-007_REPORTE_DE_ACCIDENTES_O_INCIDENTES_DE_TRABAJO.pdf"
+										},
+										{
+											"nombre": "GH-PR-008_INVESTIGACIÓN_DE_ACCIDENTE_INCIDENTE_DE_TRABAJO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-PR-008_INVESTIGACIÓN_DE_ACCIDENTE_INCIDENTE_DE_TRABAJO.pdf"
+										},
+										{
+											"nombre": "GH-VA-001_PROTOCOLO_DE_ SELECCION.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/documentos_gestion_humana/GH-VA-001_PROTOCOLO_DE_ SELECCION.pdf"
+										}
+									]
+								},
+								{
+									"nombre": "man_perfil_cargo",
+									"nodes": [
+										{
+											"nombre": "GH-MA-001_DIRECC_EJECUT.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-001_DIRECC_EJECUT.pdf"
+										},
+										{
+											"nombre": "GH-MA-002_SUBD_ADMTIVA_FINANCIERA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-002_SUBD_ADMTIVA_FINANCIERA.pdf"
+										},
+										{
+											"nombre": "GH-MA-003_SUBDIRECCIÓN_COMERCIAL.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-003_SUBDIRECCIÓN_COMERCIAL.pdf"
+										},
+										{
+											"nombre": "GH-MA-004_CONTROL_INTERNO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-004_CONTROL_INTERNO.pdf"
+										},
+										{
+											"nombre": "GH-MA-005_SECRETARIA_ADMINISTRATIVA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-005_SECRETARIA_ADMINISTRATIVA.pdf"
+										},
+										{
+											"nombre": "GH-MA-006_JEFE_CRÉDITO_CARTERA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-006_JEFE_CRÉDITO_CARTERA.pdf"
+										},
+										{
+											"nombre": "GH-MA-007_COORD_CRÉDITO_CARTERA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-007_COORD_CRÉDITO_CARTERA.pdf"
+										},
+										{
+											"nombre": "GH-MA-008_COORD_CAPACIT_PROYECT.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-008_COORD_CAPACIT_PROYECT.pdf"
+										},
+										{
+											"nombre": "GH-MA-009_ASESOR_CRÉDITO_CARTERA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-009_ASESOR_CRÉDITO_CARTERA.pdf"
+										},
+										{
+											"nombre": "GH-MA-010_ASESOR_COBRANZA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-010_ASESOR_COBRANZA.pdf"
+										},
+										{
+											"nombre": "GH-MA-011_ASISTENTE_COMERCIAL.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-011_ASISTENTE_COMERCIAL.pdf"
+										},
+										{
+											"nombre": "GH-MA-012_TESORERO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-012_TESORERO.pdf"
+										},
+										{
+											"nombre": "GH-MA-013_CONTADOR.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-013_CONTADOR.pdf"
+										},
+										{
+											"nombre": "GH-MA-014_AUXILIAR_CONTABLE_I.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-014_AUXILIAR_CONTABLE_I.pdf"
+										},
+										{
+											"nombre": "GH-MA-015_COORDINADOR_SISTEMAS.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-015_COORDINADOR_SISTEMAS.pdf"
+										},
+										{
+											"nombre": "GH-MA-016_INGENIERO_SOPORTE_SISTEMAS.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-016_INGENIERO_SOPORTE_SISTEMAS.pdf"
+										},
+										{
+											"nombre": "GH-MA-017_AUXILIAR_ADMINIST_DESEMBOLSO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-017_AUXILIAR_ADMINIST_DESEMBOLSO.pdf"
+										},
+										{
+											"nombre": "GH-MA-018_AUXILIAR_ADMNIST_ARCHIVO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-018_AUXILIAR_ADMNIST_ARCHIVO.pdf"
+										},
+										{
+											"nombre": "GH-MA-019_AUXILIAR_ADMINIST_MENSAJERIA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-019_AUXILIAR_ADMINIST_MENSAJERIA.pdf"
+										},
+										{
+											"nombre": "GH-MA-020_CAJERO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-020_CAJERO.pdf"
+										},
+										{
+											"nombre": "GH-MA-021_ASESOR_FILTRO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-021_ASESOR_FILTRO.pdf"
+										},
+										{
+											"nombre": "GH-MA-022_AUXILIAR_ADMINST_PAGARES.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-022_AUXILIAR_ADMINST_PAGARES.pdf"
+										},
+										{
+											"nombre": "GH-MA-023_COORDINADOR_DPTO_COBRANZA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-023_COORDINADOR_DPTO_COBRANZA.pdf"
+										},
+										{
+											"nombre": "GH-MA-024_AUXILIAR_ADMINIST_COBRANZA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-024_AUXILIAR_ADMINIST_COBRANZA.pdf"
+										},
+										{
+											"nombre": "GH-MA-025_AUXILIAR_CONTABLE_II.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-025_AUXILIAR_CONTABLE_II.pdf"
+										},
+										{
+											"nombre": "GH-MA-026_ASESOR_DE_CRÉDITO_Y_CARTERA_supernumerario.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-026_ASESOR_DE_CRÉDITO_Y_CARTERA_supernumerario.pdf"
+										},
+										{
+											"nombre": "GH-MA-027_ASISTENTE_DE_CONTROL_INTERNO.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-027_ASISTENTE_DE_CONTROL_INTERNO.pdf"
+										},
+										{
+											"nombre": "GH-MA-028_PERFIL_AUXILIAR_CONTABLE_III.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-028_PERFIL_AUXILIAR_CONTABLE_III.pdf"
+										},
+										{
+											"nombre": "GH-MA-029_COORD_GESTIÓN_HUMANA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-029_COORD_GESTIÓN_HUMANA.pdf"
+										},
+										{
+											"nombre": "GH-MA-030_AUXILIAR_DE_CAPACITACION_Y_PROYECTOS.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-030_AUXILIAR_DE_CAPACITACION_Y_PROYECTOS.pdf"
+										},
+										{
+											"nombre": "GH-MA-031_AUXILIAR_DE_ADMINISTRATIVO_DE_CORRESPONDENCIA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-031_AUXILIAR_DE_ADMINISTRATIVO_DE_CORRESPONDENCIA.pdf"
+										},
+										{
+											"nombre": "GH-MA-032_ASISTENTE_GESTIÓN_HUMANA.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/7-gestion_humana/man_perfil_cargo/GH-MA-032_ASISTENTE_GESTIÓN_HUMANA.pdf"
+										}
+									]
+								}
+							]
+						},
+						{
+							"nombre": "8-control_interno",
+							"nodes": [
+								{
+									"nombre": "documentos_control_interno",
+									"nodes": [
+										{
+											"nombre": "CI-CP-001_CARACT_PROC_CONTR_INTERN.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/8-control_interno/documentos_control_interno/CI-CP-001_CARACT_PROC_CONTR_INTERN.pdf"
+										},
+										{
+											"nombre": "CI-PR-002_Control_Interno.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/8-control_interno/documentos_control_interno/CI-PR-002_Control_Interno.pdf"
+										}
+									]
+								}
+							]
+						},
+						{
+							"nombre": "9-sistemas",
+							"nodes": [
+								{
+									"nombre": "documentos_sistemas",
+									"nodes": [
+										{
+											"nombre": "SI-CP-001_CARACTERIZACION_PROCESO_SISTEMAS.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/9-sistemas/documentos_sistemas/SI-CP-001_CARACTERIZACION_PROCESO_SISTEMAS.pdf"
+										},
+										{
+											"nombre": "SI-MA-001_Man_admin_sist_cartera_financiera.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/9-sistemas/documentos_sistemas/SI-MA-001_Man_admin_sist_cartera_financiera.pdf"
+										},
+										{
+											"nombre": "SI-MA-002_manual_usuario_cartera_financiera.pdf",
+											"nodes": [],
+											"href": "viewpdf?file=private/archivos_gestion_de_calidad/9-sistemas/documentos_sistemas/SI-MA-002_manual_usuario_cartera_financiera.pdf"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

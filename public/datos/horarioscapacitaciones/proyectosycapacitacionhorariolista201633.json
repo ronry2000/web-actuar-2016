@@ -1,0 +1,14 @@
+{
+	"lista": [
+		{
+			"curso": "Cupcakes Decorados",
+			"img": "Cupcakes_Decorados201633.jpg",
+			"horario": "Jueves-pm.Lunes-pm"
+		},
+		{
+			"curso": "Manipulacion de alimentos",
+			"img": "Manipulacion_de_alimentos201633.jpg",
+			"horario": "Miércoles-am.Martes-pm"
+		}
+	]
+}

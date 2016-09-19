@@ -1,0 +1,46 @@
+{
+	"lista": [
+		{
+			"linea": "Capital de trabajo",
+			"id": "capitaldetrabajo",
+			"desc": "<h3 class='lineasdecreditoItemDescH' style=\"margin:0px\">OBJETIVO:</h3>Fortalecer la capacidad actual de la microempresa, mediante la financiación de capital de trabajo, procurando satisfacer sus necesidades específicas, tales como compras, proveedores, sustitución de pasivos, etc.<h3 class='lineasdecreditoItemDescH'>DESTINO:</h3>Compra de materia prima, surtido, financiación de cartera y de efectivo.",
+			"img": "lineasdecredito0_capitaldetrabajo.jpg",
+			"img2": "lineasdecredito0_capitaldetrabajo2.jpg"
+		},
+		{
+			"linea": "Activos fijos",
+			"id": "activosfijos",
+			"img": "lineasdecredito1_activosfijos.jpg",
+			"img2": "lineasdecredito1_activosfijos2.jpg",
+			"desc": "<h4>Adecuaciones locativas</h4><h3 class='lineasdecreditoItemDescH'>OBJETIVO:</h3>Se financia la mejora o adecuación del local o lugar donde el microempresario desarrolla la actividad con el fin de mejorar las condiciones del negocio.<h3 class='lineasdecreditoItemDescH'>DESTINO:</h3>Se financia la compra o mantenimiento  de equipos y maquinaria y adecuaciones locativas.<br><br><div class='separador'></div><h4>Reparación y mantenimiento de vehículos</h4><h3 class='lineasdecreditoItemDescH'>OBJETIVO:</h3>Financiar el mantenimiento, reparación o conversión a gas vehicular del vehículo de servicio público(taxi, bus, buseta, transporte escolar, etc.), de carga(volquetas, camiones, camperos, etc.) y particulares utilizados en la actividad comercial.<h3 class='lineasdecreditoItemDescH'>DESTINO:</h3>Se financia el mantenimiento y reparación de vehículo de transporte público y de carga."
+		},
+		{
+			"linea": "Educativo",
+			"id": "educativo",
+			"img": "lineasdecredito2_educativo.jpg",
+			"img2": "lineasdecredito2_educativo2.jpg",
+			"desc": "<h3 class='lineasdecreditoItemDescH' style=\"margin:0px\">OBJETIVO:</h3>Se busca atender a los hijos de los microempresarios o particulares, que cursen estudios en la universidad, pregrados, posgrado o institutos técnicos, tanto del departamento como fuera de él que estén autorizadas por el Ministerio de educación.<h3 class='lineasdecreditoItemDescH'>DESTINO:</h3>Estudios técnicos y superiores."
+		},
+		{
+			"linea": "Empresarial",
+			"id": "empresarial",
+			"img": "lineasdecredito3_empresarial.jpg",
+			"img2": "lineasdecredito3_empresarial2.jpg",
+			"desc": "<h3 class='lineasdecreditoItemDescH' style=\"margin:0px\">OBJETIVO:</h3>Atender la necesidad de financiación de aquellos clientes que por su necesidad y capacidad de pago requieren de un monto superior a 25 SMMLV.<h3 class='lineasdecreditoItemDescH'>DESTINO:</h3>Capital de trabajo y activos fijos solo para clientes antiguos de la entidad."
+		},
+		{
+			"linea": "Crediagil",
+			"id": "crediagil",
+			"img": "lineasdecredito4_crediagil.jpg",
+			"img2": "lineasdecredito4_crediagil2.jpg",
+			"desc": "<h3 class='lineasdecreditoItemDescH' style=\"margin:0px\">OBJETIVO:</h3>Brindar una alternativa de crédito con destinación libre y de inversión."
+		},
+		{
+			"linea": "Mejoramiento de vivienda",
+			"id": "mejoramientodevivienda",
+			"img": "lineasdecredito5_mejoramientovivienda.jpg",
+			"img2": "lineasdecredito5_mejoramientovivienda2.jpg",
+			"desc": "<h3 class='lineasdecreditoItemDescH' style=\"margin:0px\">OBJETIVO:</h3>Se financia el mejoramiento de vivienda a microempresarios antiguos de la entidad catalogados como clientes oro, para que mejoren las instalaciones de su domicilio y por ende su calidad de vida.<h3 class='lineasdecreditoItemDescH'>DESTINO:</h3>Aquellos créditos que se destinarán para la mejora o ampliación de la vivienda que sirve como lugar de residencia al microempresario."
+		}
+	]
+}

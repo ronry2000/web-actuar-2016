@@ -1,0 +1,69 @@
+<div id="intranetHorariocapacitacionesDiv" ng-controller="intranethorariocapacitacionesController">
+	<div class="intranetHorariocapacitacionesTableDiv">
+		<form ng-submit="actualizarHorario()">
+			<table class="intranetHorariocapacitacionesTable">
+				<tr>
+					<td class="intranetHorariocapacitacionesTableTd" > Curso<em style="color:red">*</em></td>
+					<td><select required id="intranetHorarioCurso" ng-model="intranetHorarioCurso" style="width:200px;" ng-change="$root.intranetHorariocursoSelected=intranetHorarioCurso">
+						<option value="" selected></option>
+						<optgroup ng-repeat="lista in $root.proyectosycapacitacionLista.lista" label="{{lista.area}}" >
+							<option ng-repeat="lista2 in lista.items" value="{{lista2.titulo}}">{{lista2.titulo}}</option>
+						</optgroup>
+						
+					</select></td>
+					<td></td>
+				</tr>
+				<tbody ng-repeat="i in range.slice(0,horarioCount) track by $index">
+					<tr>
+						<td class="intranetHorariocapacitacionesTableTd"> Día {{$index+1}}<em style="color:red">*</em></td>
+						<td><select required id="intranetHorarioDia" ng-model="intranetHorarioDia[$index]" style="width:200px;">
+							<option value="" selected></option>
+							<option value="Lunes">Lunes</option>
+							<option value="Martes">Martes</option>
+							<option value="Miércoles">Miércoles</option>
+							<option value="Jueves">Jueves</option>
+							<option value="Viernes">Viernes</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td class="intranetHorariocapacitacionesTableTd" > Hora de inicio {{$index+1}}<em style="color:red">*</em></td>
+						<td><input type="text" required id="intranetHorarioHorainicio" ng-model="intranetHorarioHorainicio[$index]" placeholder="HH:MM" pattern="^([01]?[0-9]|2[0-3]):([0-5][0-9]|[0-9])$" style="width:200px"></td>
+					</tr>
+					<tr>
+						<td class="intranetHorariocapacitacionesTableTd"> Hora de finalización {{$index+1}}<em style="color:red">*</em></td>
+						<td><input type="text" required  id="intranetHorarioHorafin" ng-model="intranetHorarioHorafin[$index]" placeholder="HH:MM" pattern="^([01]?[0-9]|2[0-3]):([0-5][0-9]|[0-9])$" style="width:200px"></td>
+					</tr>
+				</tbody>
+				<tr>
+					<td colspan="2" style="text-align:center;background:rgba(235,235,241,1);cursor:pointer;color:rgba(60,60,60,1)" ng-click="agregarDia(1)">Agregar un día</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;background:rgba(235,235,241,1);cursor:pointer;color:rgba(60,60,60,1)" ng-click="agregarDia(-1)">Quitar un día</td>
+				</tr>
+				<tr>
+					<td><input type="submit" class="submitButton"input value="Borrar curso" ng-click="borrar=true"></td>
+					<td><input type="submit" class="submitButton"input></td>
+				</tr>
+			</table>
+		</form>
+		<div id="intranetHorariocapacitacionesErrorDiv" style="max-width:100%;overflow:auto;"></div>
+	</div>
+	
+	
+	<div class="intranetHorariocapacitacionesListaDiv">
+		<h3 style="margin-top:0px">Horario de cursos</h3>
+		<div ng-repeat="lista in $root.proyectosycapacitacionhorarioLista.lista">
+			<h4 ng-click="selectCurso(lista.curso)" style="margin:0px;cursor:pointer">{{lista.curso}}</h4>
+			<table style="width:100%" ng-show="lista.curso==$root.intranetHorariocursoSelected">
+				<tr><th>Día</th><th>Hora inicio</th><th>Hora finalización</th></tr>
+				<tr ng-repeat="lista2 in lista.horario" >
+					<td style="width:33%" align="center">{{lista2.dia}}</td>
+					<td style="width:33%" align="center">{{lista2.hi}}</td>
+					<td style="width:33%" align="center">{{lista2.hf}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div style="clear:both;"></div>

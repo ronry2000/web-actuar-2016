@@ -1,0 +1,55 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">TRABAJA CON NOSOTROS</span></h1>
+<div id="trabajaconnosotrosDiv">
+	<div class="trabajaconnosotrosTableDiv">
+		<p>Elabora tu hoja de vida preferiblemente en PDF y adjúntala aquí.</p>
+		<form ng-submit="trabajaconnosotros()" name="trabajaconnosotrosForm">
+			<table id="trabajaconnosotrosTable">
+				<tr class="trabajaconnosotrosTableRow">
+					<td class="trabajaconnosotrosTableTd"> Nombre<em style="color:red">*</em></td>
+					<td><input type="text" required name="trabajaconnosotrosNombre" id="trabajaconnosotrosNombre" ng-model="trabajaconnosotrosNombre" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-Z0-9\s]{1,80}$" style="width:200px"></td>
+				</tr>
+				<tr class="trabajaconnosotrosTableRow">
+					<td class="trabajaconnosotrosTableTd" > Correo electrónico</td>
+					<td><input type="email" name="trabajaconnosotrosEmail" id="trabajaconnosotrosEmail" ng-model="trabajaconnosotrosEmail" placeholder="" pattern="^[a-z0-9._%+-]{1,50}@[a-z0-9.-]{1,50}\.[a-z]{2,6}$" style="width:200px"></td>
+				</tr>
+				<tr class="trabajaconnosotrosTableRow">
+					<td class="trabajaconnosotrosTableTd" > Cargo<em style="color:red">*</em></td>
+					<td><select required name="trabajaconnosotrosCargo" id="trabajaconnosotrosCargo" ng-model="trabajaconnosotrosCargo" ng-change="$root.convocatoriaSelected=trabajaconnosotrosCargo" style="width:200px;">
+						<option value="" selected></option>
+						<option ng-repeat="lista in $root.convocatoriasLista.lista" value="{{lista.titulo}}">{{lista.titulo}}</option>
+					</select></td>
+				</tr>
+				
+				<tr class="trabajaconnosotrosTableRow">
+					<td class="trabajaconnosotrosTableTd"> Archivo<em style="color:red">*</em></td>
+					<td >
+						<div required ngf-drop ngf-select ng-model="trabajaconnosotrosFile" name="trabajaconnosotrosFile" class="drop-box" ngf-drag-over-class="'dragover'" ngf-pattern="'application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document'" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" ngf-max-size="50MB">Arrastra el archivo aquí o click para seleccionar</div>
+						{{trabajaconnosotrosFile.name || "Ningún archivo seleccionado"}}
+					</td>
+				</tr>
+				<tr class="trabajaconnosotrosTableRow">
+					<td></td>
+					<td><input type="submit" class="submitButton" ></input></td>
+				</tr>
+			</table>
+		</form>
+		<i ng-show="trabajaconnosotrosForm.trabajaconnosotrosFile.$error.maxSize">Archivo demasiado grande 
+			{{trabajaconnosotrosFile.size / 1000000|number:1}}MB: max 50M
+		</i>
+		<p style="margin:0px;color:red" ng-show="trabajaconnosotrosForm.trabajaconnosotrosFile.$error.maxSize">Archivo demasiado grande {{intranetHorarioFile.size / 1000000|number:1}}MB: max 10M</p>
+		<p style="margin:0px;color:red" ng-show="trabajaconnosotrosForm.trabajaconnosotrosFile.$error.required">Archivo pdf, doc o docx requerido</p>
+		
+		<div id="trabajaconnosotrosErrorDiv" style="max-width:100%;overflow:auto;"></div>
+		
+	</div>
+	
+	<div class="trabajaconnosotrosInfoDiv" ng-if="!!$root.convocatoriasLista">
+		<h2 style="border-bottom:1px solid rgba(170,170,170,1);margin-bottom:0px;padding-bottom:5px;">Convocatorias Vigentes</h2>
+		<div ng-repeat="lista in $root.convocatoriasLista.lista" >
+			<a href="javascript:void(0)" ng-click="itemClicked(lista.titulo)" style="white-space:normal"><h3 class="trabajaconnosotrosConvocatoriaH"><li>{{lista.titulo}}</li></h3></a>
+			<p ng-show="$root.convocatoriaSelected == lista.titulo" ng-bind-html="lista.desc | to_trusted" style="text-align:justify;"></p>
+		</div>
+	</div>
+</div>
+
+<div style="clear:both;"></div>

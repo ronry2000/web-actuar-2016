@@ -1,0 +1,43 @@
+{
+	"lista":[
+		{
+			"organizacion":"Fundación ciudadela divino niño",
+			"grupo":"ciudadeladivinonino",
+			"desc":"La misión de la entidad, es acopiar, seleccionar y distribuir alimentos perecederos y no perecederos recibidos en donación, favoreciendo a los más vulnerables sin distingo de religión, preferencias políticas, costumbres o razas, dando preferencia a niños y ancianos siendo ellos la población más desprotegida de la sociedad."
+		},
+		{
+			"organizacion":"Fundación corazón a corazón - un soplo de vida",
+			"grupo":"corazonacorazon",
+			"desc":"Entidad sin ánimo de lucro pero con ánimo de servicio social que brinda atención integral en salud a niños, niñas y jóvenes de escasos recursos económicos que padecen de cardiopatías congénitas y/o adquiridas, es una obra basada en el amor, la solidaridad, la defensa y el respeto de los derechos de la infancia."
+		},
+		{
+			"organizacion":"Hermanas oblatas del santísimo redentor",
+			"grupo":"hermanasoblatas",
+			"desc":"Esta fundación tiene como objetivo acoger, orientar, instruir y moralizar a mujeres de cualquier raza o condición social y sus hijos que se encuentren ejerciendo la prostitución o en peligro inminente de hacerlo."
+		},
+		{
+			"organizacion":"Hogar de paso",
+			"grupo":"hogarpaso",
+			"desc":"<h3 class='impactosocialOrgDescH'>HOGAR DE PASO:</h3>Dedicada a brindarle a los habitantes de la calle un lugar digno para pasar la noche."
+		},
+		{
+			"organizacion":"Fundación manos amigas",
+			"grupo":"manosamigas",
+			"desc":"La misión de la corporación consiste en ayudar, orientar, alojar, alimentar, educar y propender en el mejoramiento de la calidad de vida de sus usuarios, brindándoles la oportunidad de una vida digna dentro de los parámetros de terapia de trabajo, recreación y capacitación."
+		},
+		{
+			"organizacion":"Prodihogar",
+			"grupo":"prodihogar",
+			"desc":"Su objeto social es promover, generar y dinamizar un proceso de participación activa de todas las personas enfermas de cáncer del Tolima, que permita mejorar su nivel de vida, ofreciéndoles sitios o albergues donde convalecer durante sus tratamientos oncológicos y hacer que se respeten sus derechos."
+		}
+	],
+	"descripciones":{
+		"ciudadeladivinonino":"Fundación ciudadela divino niño",
+		"corazonacorazon":"Fundación corazón a corazón - un soplo de vida",
+		"hermanasoblatas":"Hermanas oblatas del santísimo redentor",
+		"hogarpaso":"Hogar de paso",
+		"manosamigas":"Fundación manos amigas",
+		"prodihogar":"Prodihogar"
+	}
+	
+}

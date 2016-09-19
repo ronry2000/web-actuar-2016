@@ -1,0 +1,50 @@
+<div >
+	<div class="proyectosycapacitacionPreinscripcionTableDiv">
+		<p>Ingresa tus datos.</p>
+		<p>Si quieres recibir un curso que no aparece en nuestro listado por favor selecciona "Sugerir uno".</p>
+		<form ng-submit="preinscripcion()">
+			<table class="proyectosycapacitacionPreinscripcionTable">
+				<tr><td colspan="2" style="text-align:center;font-family:appBold;background:rgba(235,235,241,1);">Semana {{selectedWeek}} - {{selectedYear}}</td></tr>
+				<tr>
+					<td class="proyectosycapacitacionPreinscripcionTableTd" > Curso<em style="color:red">*</em></td>
+					<td><select required id="proyectosycapacitacionPreinscripcionCurso" ng-model="$parent.proyectosycapacitacionPreinscripcionCurso" style="width:200px;">
+						<option value="" selected></option>
+						<option ng-repeat="lista in $root.proyectosycapacitacionhorarioLista.lista" value="{{lista.curso}}">{{lista.curso}}</option>
+						<option value="sugerir" selected style="font-family:appBold">Sugerir uno...</option>
+					</select></td>
+				</tr>
+				<tr ng-show="$parent.proyectosycapacitacionPreinscripcionCurso=='sugerir'">
+					<td class="proyectosycapacitacionPreinscripcionTableTd" > Curso sugerido<em style="color:red">*</em></td>
+					<td ><input type="text" ng-model="$parent.proyectosycapacitacionPreinscripcioncursoSugerido" placeholder="Escribe aquí el curso que deseas" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-Z0-9.:,;%=\/*+-_?¿¡!$\s@()]{1,500}$" style="width:200px"></input></td>
+				</tr>
+				<tr>
+					<td class="proyectosycapacitacionPreinscripcionTableTd"> Nombre<em style="color:red">*</em></td>
+					<td><input type="text" required id="proyectosycapacitacionPreinscripcionNombre" ng-model="$parent.proyectosycapacitacionPreinscripcionNombre" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9\s]{1,80}$" style="width:200px"></td>
+				</tr>
+				<tr>
+					<td class="proyectosycapacitacionPreinscripcionTableTd"> Teléfono 1<em style="color:red">*</em></td>
+					<td><input type="tel" required  id="proyectosycapacitacionPreinscripcionTelefono1" ng-model="$parent.proyectosycapacitacionPreinscripcionTelefono1" placeholder="Fijo o celular" pattern="^[(0-9+\s())(e?x?t?(\d*))]{7,50}$" style="width:200px"></td>
+				</tr>
+				<tr>
+					<td class="proyectosycapacitacionPreinscripcionTableTd"> Teléfono 2</td>
+					<td><input type="tel" id="proyectosycapacitacionPreinscripcionTelefono2" ng-model="$parent.proyectosycapacitacionPreinscripcionTelefono2" placeholder="Fijo o celular" pattern="^[(0-9+\s())(e?x?t?(\d*))]{7,50}$" style="width:200px"></td>
+				</tr>
+				<tr>
+					<td class="proyectosycapacitacionPreinscripcionTableTd" > Correo electrónico</td>
+					<td><input type="email" id="proyectosycapacitacionPreinscripcionEmail" ng-model="$parent.proyectosycapacitacionPreinscripcionEmail" placeholder="" pattern="^[a-z0-9._%+-]{1,50}@[a-z0-9.-]{1,50}\.[a-z]{2,6}$" style="width:200px"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" class="submitButton" ></input></td>
+				</tr>
+			</table>
+		</form>
+		<div id="proyectosycapacitacionErrorDiv" style="max-width:100%;overflow:auto;"></div>
+		
+	</div>
+	
+</div>
+
+
+
+<div style="clear:both;"></div>

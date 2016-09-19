@@ -1,0 +1,4 @@
+filezila:
+servercert.pem
+serverkey.pem
+asdf1234

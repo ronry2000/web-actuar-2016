@@ -1,0 +1,222 @@
+{
+	"lista1":[
+		{
+			"sede":"SEDE PRINCIPAL IBAGUÉ",
+			"oficina":[
+				{
+					"direccion":"Calle 18 No 6-16, Interlaken",
+					"telefono":"Teléfono: 277 02 59<br>Fax: 263 64 26",
+					"coordenadas":{"lat":"4.443234","lng":"-75.233993"},
+					"id":"Actuar Ibagué Interlaken"
+				},
+				{
+					"direccion":"Cra. 5 Calle 64, C.C. Arkacentro, Local ELA01",
+					"telefono":"Teléfono: 277 02 61<br>277 02 62",
+					"coordenadas":{"lat":"4.436876","lng":"-75.200169"},
+					"id":"Actuar Ibagué Arkacentro"
+				}
+			]
+		},
+		{
+			"sede":"SEDE CAJAMARCA",
+			"oficina":[
+				{
+					"direccion":"Calle 6 No. 8-14/16, B/Centro",
+					"telefono":"Teléfono: 287 00 64",
+					"coordenadas":{"lat":"4.442396","lng":"-75.427428"},
+					"id":"Actuar Cajamarca"
+				}
+			]
+		},
+		{
+			"sede":"SEDE ESPINAL",
+			"oficina":[
+				{
+					"direccion":"Cra. 5 No 11-44, C.C. Palma de Mallorca, Local 2",
+					"telefono":"Teléfono: 248 18 26",
+					"coordenadas":{"lat":"4.149422","lng":"-74.885855"},
+					"id":"Actuar Espinal"
+				}
+			]
+		},
+		{
+			"sede":"SEDE GIRARDOT",
+			"oficina":[
+				{
+					"direccion":"Calle 16 No 7-60, Centro",
+					"telefono":"Teléfono: 888 95 48<br>888 95 49",
+					"coordenadas":{"lat":"4.293803","lng":"-74.805247"},
+					"id":"Actuar Girardot"
+				}
+			]
+		},
+		{
+			"sede":"SEDE MELGAR",
+			"oficina":[
+				{
+					"direccion":"Cra. 21 No 7-56",
+					"telefono":"Teléfono: 245 29 79",
+					"coordenadas":{"lat":"4.206381","lng":"-74.640537"},
+					"id":"Actuar melgar"
+				}
+			]
+		},
+		{
+			"sede":"SEDE FUSAGASUGA",
+			"oficina":[
+				{
+					"direccion":"Cra. 6 No 5-62, Local 3",
+					"telefono":"Teléfono: 871 89 55",
+					"coordenadas":{"lat":"4.344656","lng":"-74.361551"},
+					"id":"Actuar Fusagasuga"
+				}
+			]
+		},
+		{
+			"sede":"SEDE CHAPARRAL",
+			"oficina":[
+				{
+					"direccion":"Cra. 8 No. 9-30",
+					"telefono":"Teléfono: 246 31 00",
+					"coordenadas":{"lat":"3.724565","lng":"-75.484505"},
+					"id":"Actuar Chaparral"
+				}
+			]
+		},		
+		{
+			"sede":"SEDE NEIVA",
+			"oficina":[
+				{
+					"direccion":"Cra. 5 No 10-49, C.C. Plaza Real, Of. 201 / 202",
+					"telefono":"Teléfono: 871 89 92<br>863 01 43",
+					"coordenadas":{"lat":"2.929450","lng":"-75.289868"},
+					"id":"Actuar Neiva"
+				}
+			]
+		}
+	],
+	"lista2":[
+		{
+			"sede":"SEDE LÉRIDA",
+			"oficina":[
+				{
+					"direccion":"Cra. 5 No 7-88",
+					"telefono":"Teléfono: 289 15 20<br>289 11 72",
+					"coordenadas":{"lat":"4.862739","lng":"-74.908610"},
+					"id":"Actuar Lérida"
+				}
+			]
+		},
+		{
+			"sede":"SEDE LÍBANO",
+			"oficina":[
+				{
+					"direccion":"Calle 5 No 9-26",
+					"telefono":"Teléfono: 256 32 12",
+					"coordenadas":{"lat":"4.923369","lng":"-75.063554"},
+					"id":"Actuar Líbano"
+				}
+			]
+		},
+		{
+			"sede":"SEDE GUAYABAL",
+			"oficina":[
+				{
+					"direccion":"Calle 5 No 6-70, B/Centro",
+					"telefono":"Teléfono: 253 01 44",
+					"coordenadas":{"lat":"5.027143","lng":"-74.888789"},
+					"id":"Actuar Guayabal"
+				}
+			]
+		},
+		{
+			"sede":"SEDE HONDA",
+			"oficina":[
+				{
+					"direccion":"Cra. 11 No 14-85, Local 4, Edif. Hotel América",
+					"telefono":"Teléfono: 251 54 37",
+					"coordenadas":{"lat":"5.202564","lng":"-74.742623"},
+					"id":"Actuar Honda"
+				}
+			]
+		},
+		{
+			"sede":"SEDE MARIQUITA",
+			"oficina":[
+				{
+					"direccion":"Calle 6 No 4-63",
+					"telefono":"Teléfono: 252 53 91",
+					"coordenadas":{"lat":"5.198234","lng":"-74.895537"},
+					"id":"Actuar Mariquita"
+				}
+			]
+		},
+		{
+			"sede":"SEDE FRESNO",
+			"oficina":[
+				{
+					"direccion":"Calle 5 No 7-54",
+					"telefono":"Teléfono: 258 12 74",
+					"coordenadas":{"lat":"5.152873","lng":"-75.035958"},
+					"id":"Actuar Fresno"
+				}
+			]
+		},
+		{
+			"sede":"SEDE CAMPOALEGRE",
+			"oficina":[
+				{
+					"direccion":"Cra. 9 No 20-00 Esquina, Local 3",
+					"telefono":"Teléfono: 838 51 45",
+					"coordenadas":{"lat":"2.685837","lng":"-75.324940"},
+					"id":"Actuar Campoalegre"
+				}
+			]
+		},
+		{
+			"sede":"SEDE GARZON",
+			"oficina":[
+				{
+					"direccion":"Calle 5 Cra. 8 Esquina, Local 4",
+					"telefono":"Teléfono: 833 03 78",
+					"coordenadas":{"lat":"2.195830","lng":"-75.627967"},
+					"id":"Actuar Garzon"
+				}
+			]
+		},
+		{
+			"sede":"SEDE PITALITO",
+			"oficina":[
+				{
+					"direccion":"Cra. 3 No 4-59",
+					"telefono":"Teléfono: 836 39 92",
+					"coordenadas":{"lat":"1.850621","lng":"-76.046203"},
+					"id":"Actuar Pitalito"
+				}
+			]
+		},
+		{
+			"sede":"SEDE LA PLATA",
+			"oficina":[
+				{
+					"direccion":"Calle 4 No. 3-10,B/Centro ",
+					"telefono":"Teléfono: 837 00 04",
+					"coordenadas":{"lat":"1.850621","lng":"-76.046203"},
+					"id":"Actuar Pitalito"
+				}
+			]
+		},
+		{
+			"sede":"SEDE SAN AGUSTÍN",
+			"oficina":[
+				{
+					"direccion":"Cra. 5 No 13-17, Perpetuo Socorro",
+					"telefono":"Teléfono: 837 93 64",
+					"coordenadas":{"lat":"1.881825","lng":"-76.271739"},
+					"id":"Actuar San Agustín"
+				}
+			]
+		}
+	]
+	
+}

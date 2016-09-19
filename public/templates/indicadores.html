@@ -1,0 +1,20 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">INDICADORES</span></h1>
+<div id="indicadoresDiv">
+	<h2 ng-click="selectIndicadores('financieros')" style="cursor:pointer"><img ng-src="{{'financieros'==$root.indicadoresSelected ? './img/less.png' : './img/more.png'}}" style="vertical-align:middle;" alt="actuar tolima" longdesc="#footerDiv"></img> Indicadores financieros</h2>
+	<h2 ng-click="selectIndicadores('socioeconomicos')" style="cursor:pointer"><img ng-src="{{'socioeconomicos'==$root.indicadoresSelected ? './img/less.png' : './img/more.png'}}" style="vertical-align:middle;" alt="actuar tolima" longdesc="#footerDiv"></img> Indicadores socioeconómicos</h2>
+	<div class="separador"></div>
+	<div class="indicadoresContainer1">
+		<div class="indicadoresGraficoDiv" ng-repeat="foto in indicadoresFinancieros" ng-if="!!indicadoresFinancieros" ng-show="$root.indicadoresSelected=='financieros'">
+			<img ng-src="./fotos/indicadores/{{foto}}" width="100%"></img>
+		</div>
+		<div class="indicadoresGraficoDiv" ng-repeat="foto in indicadoresSocioeconomicos" ng-if="!!indicadoresSocioeconomicos" ng-show="$root.indicadoresSelected=='socioeconomicos'">
+			<img ng-src="./fotos/indicadores/{{foto}}" width="100%"></img>
+		</div>
+		
+	</div>
+	
+	
+	
+</div>
+
+<div style="clear:both;"></div>

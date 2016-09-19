@@ -1,0 +1,50 @@
+<div oc-lazy-load="['./intranet/contenido/scripts/intranetindicadorescontroller.js']">
+
+<div ng-controller="intranetindicadoresController" style="margin-left:1%;margin-right:1%">
+	<div class="intranetIndicadoresTableDiv">
+		<form ng-submit="actualizarIndicadores()" name="intranetIndicadoresForm">
+			<table class="intranetIndicadoresTable">
+				
+				<tr>
+					<td class="intranetIndicadoresTableTd"> Tipo<em style="color:red">*</em></td>
+					<td><select required id="intranetIndicadoresTipo" ng-model="intranetIndicadoresTipo" name="intranetIndicadoresTipo" style="width:200px;" ng-change="$root.intranetIndicadoresSelected=intranetIndicadoresTipo">
+						<option value="" selected></option>
+						<option value="socioeconomicos">Socio-economicos</option>
+						<option value="financieros">Financieros</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="intranetIndicadoresTableTd"> Imagen<em style="color:red">*</em></td>
+					<td>
+						<div required ngf-drop ngf-select ng-model="intranetIndicadoresFile" name="intranetIndicadoresFile" class="drop-box" ngf-drag-over-class="'dragover'" ngf-pattern="'image/*'" accept="image/*" ngf-max-size="1MB">Arrastra la imagen aquí o click para seleccionar</div>
+						<img ng-show="intranetIndicadoresForm.intranetIndicadoresFile.$valid" ngf-thumbnail="intranetIndicadoresFile" class="thumbnail">
+						<p style="margin:0px">{{intranetIndicadoresFile.name || "Ningún archivo seleccionado"}}</p>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" class="submitButton"></td>
+				</tr>
+			</table>
+		</form>
+		<p style="margin:0px;color:red" ng-show="intranetIndicadoresForm.intranetIndicadoresFile.$error.maxSize">Archivo demasiado grande {{intranetIndicadoresFile.size / 1000000|number:1}}MB: max 1MB</p>
+		<p style="margin:0px;color:red" ng-show="intranetIndicadoresForm.intranetIndicadoresFile.$error.required">*archivo de 750x450 pixels requerido</p>
+		
+		<div id="intranetIndicadoresErrorDiv" style="max-width:100%;overflow:auto;"></div>
+	</div>
+	
+	
+	<div class="intranetIndicadoresListaDiv">
+		<h3 style="margin-top:0px">Fotos</h3>
+		<div ng-repeat="foto in $root.indicadoresFotos.fotos">
+			<li style="white-space:nowrap;padding-top:5px;padding-bottom:5px;list-style-type:circle;" ng-mouseenter="itemHovered(foto)" ng-mouseleave="itemHovered(foto)">
+				<h4 style="margin:0px;display:inline;white-space:nowrap;word-wrap:break-word;word-break:break-word;"><a ng-href="./fotos/indicadores/{{foto}}" target="_blank" style="white-space:nowrap;word-wrap:break-word;word-break:break-word;">&nbsp{{foto}}</a></h4>
+				<img ng-src="./img/delete.png" ng-click="deleteIndicadores(foto)" style="cursor:pointer;vertical-align:middle;margin-left:5px;" height="15px" ng-show="foto==intranetIndicadorHover"></img>
+			</li>
+		</div>
+	</div>
+</div>
+
+<div style="clear:both;"></div>
+
+</div>

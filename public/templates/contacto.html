@@ -1,0 +1,104 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">CORREOS Y DEPENDENCIAS</span></h1>
+<div id="contactoTableDiv">
+	<h3>TU OPINIÓN ES IMPORTANTE</h3>
+	<p>Si tienes alguna sugerencia, por favor remítela a nuestra compañía.</p>
+	<form ng-submit="contacto()">
+	<table class="contactoTable">
+		<tr class="contactoTableRow">
+			<td class="contactoTableTd"> Nombre<em style="color:red">*</em></td>
+			<td><input type="text" required name="contactoNombre" id="contactoNombre" ng-model="contactoNombre" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{1,80}$" style="width:200px"></td>
+		</tr>
+		<tr class="contactoTableRow">
+			<td class="contactoTableTd"> Empresa&nbsp</td>
+			<td><input type="text" name="contactoEmpresa" id="contactoEmpresa" ng-model="contactoEmpresa" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{0,80}$" style="width:200px"></td>
+		</tr>
+		<tr class="contactoTableRow">
+			<td class="contactoTableTd"> Ciudad<em style="color:red">*</em></td>
+			<td><input type="text" required name="contactoCiudad" id="contactoCiudad" ng-model="contactoCiudad" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{0,80}$" style="width:200px"></td>
+		</tr>
+		<tr class="contactoTableRow">
+			<td class="contactoTableTd"> Dirección<em style="color:red">*</em></td>
+			<td><input type="text" required name="contactoDireccion" id="contactoDireccion" ng-model="contactoDireccion" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{0,80}$" style="width:200px"></td>
+		</tr>
+		<tr class="contactoTableRow">
+			<td class="contactoTableTd"> Teléfono<em style="color:red">*</em></td>
+			<td><input type="tel" required name="contactoTelefono" id="contactoTelefono" ng-model="contactoTelefono" placeholder="Fijo o celular" pattern="^[(0-9+\s())(e?x?t?(\d*))]{7,50}$" style="width:200px"></td>
+		</tr>
+		<tr class="contactoTableRow">
+			<td class="contactoTableTd" > Correo electrónico</td>
+			<td><input type="email" name="contactoEmail" id="contactoEmail" ng-model="contactoEmail" placeholder="" pattern="^[a-z0-9._%+-]{1,50}@[a-z0-9.-]{1,50}\.[a-z]{2,6}$" style="width:200px"></td>
+		</tr>
+		<tr class="contactoTableRow">
+			<td class="contactoTableTd"> Mensaje<em style="color:red">*</em></td>
+			<td ><textarea required name="contactoMensaje"  ng-model="contactoMensaje" placeholder="" style="width:200px;min-width:200px;max-width:500px;height:120px;" ></textarea></td>
+		</tr>
+		<tr class="contactoTableRow">
+			<td></td>
+			<td><input type="submit" class="submitButton" ></input></td>
+		</tr>
+	</table>
+	</form>
+	<div id="contactoErrorDiv" style="max-width:100%;overflow:auto;"></div>
+	
+</div>
+<div id="contactoImgDiv"><img ng-src="./fotos/contacto.jpg" alt="actuar tolima" width="100%" longdesc="#footerDiv"></img></div>
+
+<div id="contactoDiv" ng-if="!!$root.nuestrasoficinasLista">
+	<div class="contactoInfoDiv">
+		
+		<table class="nuestrasoficinasTable" style="width:100%">
+			<tr><td colspan="2"><h3 class="nuestrasoficinasInfoP">{{$root.nuestrasoficinasLista.lista1[0].sede}}</h3></td></tr>
+			<ul style="padding:0px;margin:0px"><tr class="nuestrasoficinasTableRow">
+				<td style="vertical-align:top;"><li><a style="white-space: normal" href="javascript:void(0)" ng-click="$root.markerName=$root.nuestrasoficinasLista.lista1[0].oficina[0].id;$root.mapLat=$root.nuestrasoficinasLista.lista1[0].oficina[0].coordenadas.lat;$root.mapLng=$root.nuestrasoficinasLista.lista1[0].oficina[0].coordenadas.lng;">
+					{{$root.nuestrasoficinasLista.lista1[0].oficina[0].direccion}}<img ng-src="./img/logomaps.png" width="20px" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img>
+				</a></li></td>
+				<td style="text-align:right"><p class="nuestrasoficinasInfoP" ng-bind-html="$root.nuestrasoficinasLista.lista1[0].oficina[0].telefono"></p></td>
+			</tr>
+			<tr class="nuestrasoficinasTableRow">
+				<td style="vertical-align:top;"><li><a style="white-space: normal" href="javascript:void(0)" ng-click="$root.markerName=$root.nuestrasoficinasLista.lista1[0].oficina[1].id;$root.mapLat=$root.nuestrasoficinasLista.lista1[0].oficina[1].coordenadas.lat;$root.mapLng=$root.nuestrasoficinasLista.lista1[0].oficina[1].coordenadas.lng;">
+					{{$root.nuestrasoficinasLista.lista1[0].oficina[1].direccion}}<img ng-src="./img/logomaps.png" width="20px" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img>
+				</a></li></td>
+				<td style="text-align:right"><p class="nuestrasoficinasInfoP" ng-bind-html="$root.nuestrasoficinasLista.lista1[0].oficina[1].telefono"></p></td>
+			</tr>
+		</table>
+		<table class="nuestrasoficinasTable" style="width:100%">
+			<tr><td colspan="2"><h3 class="nuestrasoficinasInfoP">{{$root.nuestrasoficinasLista.lista1[1].sede}}</h3></td></tr>
+			<ul style="padding:0px;margin:0px"><tr class="nuestrasoficinasTableRow">
+				<td style="vertical-align:top;"><li><a style="white-space: normal" href="javascript:void(0)" ng-click="$root.markerName=$root.nuestrasoficinasLista.lista1[1].oficina[0].id;$root.mapLat=$root.nuestrasoficinasLista.lista1[1].oficina[0].coordenadas.lat;$root.mapLng=$root.nuestrasoficinasLista.lista1[1].oficina[0].coordenadas.lng;">
+					{{$root.nuestrasoficinasLista.lista1[1].oficina[0].direccion}}<img ng-src="./img/logomaps.png" width="20px" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img>
+				</a></li></td>
+				<td style="text-align:right"><p class="nuestrasoficinasInfoP" ng-bind-html="$root.nuestrasoficinasLista.lista1[1].oficina[0].telefono"></p></td>
+			</tr>
+		</table>
+		<table class="nuestrasoficinasTable" style="width:100%">
+			<tr><td colspan="2"><h3 class="nuestrasoficinasInfoP">{{$root.nuestrasoficinasLista.lista1[2].sede}}</h3></td></tr>
+			<ul style="padding:0px;margin:0px"><tr class="nuestrasoficinasTableRow">
+				<td style="vertical-align:top;"><li><a style="white-space: normal" href="javascript:void(0)" ng-click="$root.markerName=$root.nuestrasoficinasLista.lista1[2].oficina[0].id;$root.mapLat=$root.nuestrasoficinasLista.lista1[2].oficina[0].coordenadas.lat;$root.mapLng=$root.nuestrasoficinasLista.lista1[2].oficina[0].coordenadas.lng;">
+					{{$root.nuestrasoficinasLista.lista1[2].oficina[0].direccion}}<img ng-src="./img/logomaps.png" width="20px" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img>
+				</a></li></td>
+				<td style="text-align:right"><p class="nuestrasoficinasInfoP" ng-bind-html="$root.nuestrasoficinasLista.lista1[2].oficina[0].telefono"></p></td>
+			</tr>
+		</table>
+		<table class="nuestrasoficinasTable" style="width:100%">
+			<tr><td colspan="2"><h3 class="nuestrasoficinasInfoP">{{$root.nuestrasoficinasLista.lista1[4].sede}}</h3></td></tr>
+			<ul style="padding:0px;margin:0px"><tr class="nuestrasoficinasTableRow">
+				<td style="vertical-align:top;"><li><a style="white-space: normal" href="javascript:void(0)" ng-click="$root.markerName=$root.nuestrasoficinasLista.lista1[4].oficina[0].id;$root.mapLat=$root.nuestrasoficinasLista.lista1[4].oficina[0].coordenadas.lat;$root.mapLng=$root.nuestrasoficinasLista.lista1[4].oficina[0].coordenadas.lng;">
+					{{$root.nuestrasoficinasLista.lista1[4].oficina[0].direccion}}<img ng-src="./img/logomaps.png" width="20px" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img>
+				</a></li></td>
+				<td style="text-align:right"><p class="nuestrasoficinasInfoP" ng-bind-html="$root.nuestrasoficinasLista.lista1[4].oficina[0].telefono"></p></td>
+			</tr>
+		</table>
+		
+		<h3 style="margin-bottom:0px"><a ng-href="./nuestrasoficinas" hreflang="es" rel="bookmark">TODAS LAS SEDES>></a></h3>
+		
+	</div>
+	<div class="contactoInfoDiv2">
+		<ng-map zoom="16" center="[{{$root.mapLat}},{{$root.mapLng}}]" scrollwheel="false" style="width:100%;height:100%;margin-top:1%;float:left;">
+			<marker position="[{{$root.mapLat}},{{$root.mapLng}}]" title="{{$root.markerName}}"></marker>
+		</ng-map>
+	</div>
+	
+	
+</div>
+
+<div style="clear:both;"></div>

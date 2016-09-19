@@ -1,0 +1,10 @@
+{
+  "name": "atserver",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "dependencies": {
+    
+  }
+}

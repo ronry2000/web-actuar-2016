@@ -1,0 +1,65 @@
+<div oc-lazy-load="['./intranet/ofertalaboral/scripts/intranetofertalaboralcontroller.js']">
+<div ng-controller="intranetofertalaboralController" style="margin-left:1%;margin-right:1%">
+	<div id="intranetofertalaboralErrorDiv" style="max-width:100%;overflow:auto;">{{"destino seleccionado: "+(path || "ninguno")}}</div>
+	<div id="intranetofertalaboralDiv">
+		<treecontrol class="tree-classic"
+			tree-model="intranetarchivosuploadsLista.lista"
+			options="treeOptions"
+			selected-node="selectedNodes"
+			expanded-nodes="expandedNodes"
+			on-selection="onselected(node, selected, $parentNode, $index, $first, $middle, $last, $odd, $even)" 
+			on-node-toggle="onnodetoggle(node, expanded, $parentNode, $index, $first, $middle, $last, $odd, $even)">
+			<div class="intranetarchivosItem">
+				<a ng-href="{{node.href}}" target="_blank"><span class="intranetofertalaboralItem">{{node.nombre}}</span></a>
+				<img ng-src="./img/delete.png" ng-click="deleteArchivo(node.nombre)" style="cursor:pointer;margin-left:5px;" height="15px" ng-if="isErasable(node)"></img>
+			</div>
+		</treecontrol>
+	</div>
+	
+	<div class="separador"></div>
+	
+	<div class="intranetofertalaboralListaDiv">
+		<div ng-repeat="lista in $root.convocatoriasLista.lista">
+				<li style="white-space:nowrap;padding-top:5px;padding-bottom:5px;list-style-type:circle;">
+					<h4 style="margin:0px;display:inline;white-space:normal;cursor:pointer;word-wrap:break-word;word-break:break-word" ng-click="itemSelected(lista.titulo)">&nbsp{{lista.titulo}}</h4>
+					<img ng-src="./img/delete.png" ng-click="deleteOferta(lista.titulo)" style="cursor:pointer;vertical-align:middle;margin-left:5px;" height="15px" ng-show="lista.titulo==intranetOfertaSelected"></img>
+					<img ng-src="./img/view.png" ng-click="itemClicked(lista.titulo)" style="cursor:pointer;vertical-align:middle;margin-left:5px;" height="15px" ng-show="lista.titulo==intranetOfertaSelected"></img>
+					<p ng-show="lista.titulo==$root.intranetofertaselected" ng-bind-html="lista.desc | to_trusted" style="white-space:initial;border:1px solid rgba(170,170,170,1)"></p>
+				</li>
+		</div>
+	</div>
+	
+	<div class="separador"></div>
+	
+	<div class="intranetofertalaboralTableDiv">
+		<form ng-submit="agregarOferta()" name="intranetofertalaboralForm">
+			<table class="intranetofertalaboralTable">
+				<tr>
+					<td class="intranetofertalaboralTableTd"> Oferta<em style="color:red">*</em></td>
+					<td style="white-space:nowrap">
+						<input type="text" required name="intranetOfertaTitulo2" id="intranetOfertaTitulo2" ng-init="intranetOfertaTitulo=''" ng-model="intranetOfertaTitulo" ng-change="itemChanged(intranetOfertaTitulo)" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-Z0-9\s-_]{1,300}$" style="width:182px;border-radius:5px 0px 0px 5px;border-right:0px"><select required id="intranetOfertaTitulo" ng-model="intranetOfertaTitulo" name="intranetOfertaTitulo" style="width:18px;border-radius:0px 5px 5px 0px;border-left:0px;padding-left:0px;padding-right:0px" ng-change="itemChanged(intranetOfertaTitulo);">
+							<option value="" selected></option>
+							<option ng-repeat="lista in $root.convocatoriasLista.lista" value="{{lista.titulo}}">{{lista.titulo}}</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="intranetofertalaboralTableTd"> Descripción<em style="color:red">*</em></td>
+					<td><textarea required name="intranetOfertaDesc" id="intranetOfertaDesc" ng-model="intranetOfertaDesc" placeholder="" style="width:100%;height:200px;"></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" class="submitButton"></td>
+				</tr>
+			</table>
+		</form>
+		
+	</div>
+	
+	
+</div>
+
+
+
+<div style="clear:both;"></div>
+</div>

@@ -1,0 +1,351 @@
+body{
+	//background:rgba(0,0,0,1);
+	
+}
+#logoActuarTolima{
+	width:180px;
+	height:auto;
+}
+#header{
+	position:relative;
+	clear:both;
+	width:100%;
+	padding:0px;
+	margin-right:0px;
+	margin-left:0px;
+	background:transparent;
+	margin-top:25px;
+}
+.headerItem{
+	background:rgba(52,55,113,1);
+	color:rgba(255,255,255,1);
+	clear:both;
+	//width:100%;
+	margin-right:0px;
+	padding:10px;
+	display:block;
+}
+.headerMenu{
+	display:inline-block;
+}
+.headerItem:hover{
+	color:rgba(51,124,66,1);
+}
+.topBar{
+	left:180px;
+}
+.fbkDivFloating{
+	//top:320px;
+}
+.fbkDivFloating2{
+	//top:320px;
+	margin-right:0px;
+	margin-top:10px;
+}
+#footerImg{
+	width:20%;
+	min-width:90px;
+	left:1%;
+}
+#footerDiv{
+	//margin-top:250px;
+	margin-right:0px;
+}
+.footerDivItem{
+	display:block;
+}
+#footerSigenosDiv{
+	top:125px;
+	right:10%;
+}
+.indexSliderDiv{
+	//top:330px;
+}
+#indexDiv{
+	//top:740px;
+}
+.indexSliderDivAux{
+	//height:1150px;
+}
+#indexSecciones1{
+	margin-left:1%;
+	margin-right:1%;
+	width:98%;
+	float:initial;
+}
+#indexPQR{
+	width:98%;
+	margin-left:1%;
+	margin-right:1%;
+	float:initial;
+}
+
+#quienessomosDiv{
+	width:98%;
+	margin-right:1%;
+	float:initial;
+}
+.conocenosSliderDiv{
+	//width:98%;
+	//margin-left:1%;
+	//top:400px;
+	float:initial;
+}
+.conocenosSliderDivAux{
+	width:98%;
+	margin-left:1%;
+	//height:320px;
+	float:initial;
+}
+.videoDivButton{
+	//font-size:50%;
+}
+.videoIframe{
+	max-width:640px;
+	max-height:480px;
+	width:100%;
+	height:320px;
+}
+#contactoTableDiv{
+	margin-right:1%;
+	margin-left:1%;
+	width:98%;
+	text-align:center;
+	float:initial;
+}
+#contactoDiv{	
+	width:98%;
+	margin-left:1%;
+	margin-right:1%;
+	float:initial;
+}
+#contactoTable{
+	width:50%;
+	margin:0 auto;
+	text-align:initial;
+}
+.contactoInfoDiv{
+	width:98%;
+	margin-left:1%;
+	margin-right:1%;
+	float:initial;
+}
+.contactoInfoDiv2{
+	width:98%;
+	margin-left:1%;
+	margin-right:1%;
+	float:initial;
+}
+#contactoImgDiv{
+	display:none;
+}
+.misionvisionDiv{
+	margin-right:1%;
+	width:96%;
+	float:initial;
+	clear:both;
+}
+.misionvisionDiv2{
+	width:98%;
+	float:initial;
+	clear:both;
+}
+.videoDivContainer{
+	margin-left:1%;
+	width:98%;
+	float:initial;
+}
+.nuestrasoficinasMap{
+	width:100%;
+	height:350px;
+	margin-top:1%;
+	float:left;
+}
+.proyectosycapacitacionSliderDiv{
+	//width:98%;
+	//margin-left:1%;
+	//top:440px;
+	//display:none;
+	float:initial;
+}
+.proyectosycapacitacionSloganDiv{
+	clear:both;
+	width:100%;
+	float:initial;
+}
+.proyectosycapacitacionSliderDivAux{
+	width:98%;
+	margin-left:1%;
+	float:initial;
+}
+.proyectosycapacitacionPreinscripcionTableDiv{
+	margin-right:1%;
+	width:98%
+}
+.proyectosycapacitacionDatepickerDiv{
+	height:210px;
+}
+#proyectosycapacitacionListaDiv{
+	width:98%;
+	margin-right:1%;
+	float:initial;
+}
+#proyectosycapacitacionDescDiv{
+	margin-right:1%;
+	width:98%;
+	float:initial;
+}
+#proyectosycapacitacionHorariosDiv{
+	max-height:350px;
+}
+.impactosocialSliderDiv{
+	//width:98%;
+	//top:400px;
+	margin:0px;
+	float:initial;
+}
+.impactosocialSliderDivAux{
+	margin-right:1%;
+	width:98%;
+	//height:0px;
+	float:initial;
+}
+.impactosocialListaDiv{
+	width:98%;
+	margin-left:1%;
+	float:initial;
+}
+.impactosocialDiv{
+	border-radius:10px;
+	background:rgba(52,55,113,1);
+	text-align:center;
+	color:white;
+	padding:5px;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin-bottom:10px;
+	width:98%;
+	white-space:normal;
+	vertical-align:middle;
+	cursor:pointer;
+}
+#impactosocialDescDiv{
+	margin-right:1%;
+	width:96%;
+	//margin-top:400px;
+	float:initial;
+}
+#impactosocialOrgDescDiv{
+	margin-left:1%;
+	width:98%;
+	float:initial;
+}
+.indicadoresGraficoDiv{
+	width:100%;
+	float:initial;
+}
+.indicadoresContainer1{
+	width:100%;
+	float:initial;
+}
+.indicadoresContainer2{
+	width:100%;
+	float:initial;
+}
+.lineasdecreditoItem{
+	width:100%;
+	float:initial;
+}
+.lineasdecreditoItemMultiplo3{
+	width:100%;
+	float:initial;
+}
+.lineasdecreditoItemImg{
+	width:100%;
+}
+.lineasdecreditoItemImgSelected{
+	width:100%;
+	height:auto;
+}
+.trabajaconnosotrosInfoDiv{
+	width:98%;
+	margin-right:1%;
+	float:initial;
+}
+.trabajaconnosotrosTableDiv{
+	margin-left:1%;
+	width:98%;
+	float:initial;
+}
+.intranetUserTable{
+	width:98%;
+	margin-right:1%;
+	float:initial;
+}
+.intranetAdminTable{
+	width:98%;
+	margin-left:1%;
+	margin-top:20px;
+	float:initial;
+}
+.intranetHorariocapacitacionesTableDiv{
+	margin-right:1%;
+	float:initial;
+	width:98%;
+	margin-bottom:10px;
+}
+.intranetHorariocapacitacionesListaDiv{
+	margin-left:1%;
+	float:initial;
+	width:98%;
+}
+.intranetCapacitacionesListaDiv{
+	margin-left:1%;
+	float:initial;
+	width:98%;
+	clear:both;
+}
+.intranetCapacitacionesTableDiv{
+	margin-bottom:10px;
+}
+.intranetIndicadoresListaDiv{
+	margin-left:1%;
+	float:initial;
+	width:98%;
+	clear:both;
+}
+.intranetIndicadoresTableDiv{
+	margin-bottom:10px;
+}
+#registroDiv{
+	float:initial;
+	width:98%;
+	margin-right:1%;
+}
+.registroUsuariosListaDiv{
+	float:initial;
+	width:98%;
+	margin-left:1%;
+}
+#solicitarcreditoTableDiv{
+	float:initial;
+	//clear:both;
+	width:98%;
+}
+.videoDiv{
+	float:initial;
+	//clear:both;
+	width:98%;
+	margin-left:1%;
+}
+
+
+
+
+
+
+
+
+
+
+

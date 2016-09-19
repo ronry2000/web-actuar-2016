@@ -1,0 +1,31 @@
+<div id="intranetIndexDiv">
+	<table class="intranetUserTable">
+		<tr >
+			<td ><h2 style="text-align:center">{{$root.user.name}}</h2></td>
+		</tr>
+		<tr >
+			<td class="intranetTableTd"><a ng-href="./intranet/archivos"><div><h3 style="margin:0px;padding-top:20px;padding-bottom:20px;">Archivos</h3></div></a></td>
+		</tr>
+		<tr ng-if="$root.user.accesibilidad=='administrador' || $root.user.accesibilidad=='capacitacion'">
+			<td class="intranetTableTd"><a ng-href="./intranet/capacitaciones"><div><h3 style="margin:0px;padding-top:20px;padding-bottom:20px;">Capacitaciones</h3></div></a></td>
+		</tr>
+		<tr ng-if="$root.user.accesibilidad=='administrador' || $root.user.accesibilidad=='gestionhumana'">
+			<td class="intranetTableTd"><a ng-href="./intranet/ofertalaboral"><div><h3 style="margin:0px;padding-top:20px;padding-bottom:20px;">Oferta laboral</h3></div></a></td>
+		</tr>
+		<tr ng-if="$root.user.accesibilidad=='administrador' || $root.user.accesibilidad=='contenido'">
+			<td class="intranetTableTd"><a ng-href="./intranet/contenido"><div><h3 style="margin:0px;padding-top:20px;padding-bottom:20px;">Contenido</h3></div></a></td>
+		</tr>
+	</table>
+	<table class="intranetAdminTable" ng-if="$root.user.accesibilidad=='administrador'">
+		<tr>
+			<td><h2 style="text-align:center">Admin</h2></td>
+		</tr>
+		<tr >
+			<td class="intranetTableTd"><a ng-href="./intranet/registro"><div><h3 style="margin:0px;padding-top:20px;padding-bottom:20px;">Registro de usuarios</h3></div></a></td>
+		</tr>
+	</table>
+</div>
+
+
+
+<div style="clear:both;"></div>

@@ -1,0 +1,99 @@
+{
+	"lista": [
+		{
+			"curso": "Sistemas Nivel II",
+			"horario": [
+				{
+					"dia": "Jueves",
+					"hi": "09:00",
+					"hf": "10:00"
+				},
+				{
+					"dia": "Miércoles",
+					"horainicio": "Mon Aug 17 2015 10:43:00 GMT-0500 (SA Pacific Standard Time)",
+					"horafin": "Mon Aug 17 2015 12:13:00 GMT-0500 (SA Pacific Standard Time)",
+					"hi": "10:43",
+					"hf": "12:13"
+				}
+			]
+		},
+		{
+			"curso": "Contabilidad sistematizada Nivel I, II y III",
+			"horario": [
+				{
+					"dia": "Jueves",
+					"horainicio": "Mon Aug 17 2015 15:43:00 GMT-0500 (SA Pacific Standard Time)",
+					"horafin": "Mon Aug 17 2015 18:13:00 GMT-0500 (SA Pacific Standard Time)",
+					"hi": "15:43",
+					"hf": "18:13"
+				},
+				{
+					"dia": "Martes",
+					"horainicio": "Mon Aug 17 2015 15:43:00 GMT-0500 (SA Pacific Standard Time)",
+					"horafin": "Mon Aug 17 2015 18:13:00 GMT-0500 (SA Pacific Standard Time)",
+					"hi": "15:43",
+					"hf": "18:13"
+				}
+			]
+		},
+		{
+			"curso": "Sistemas Nivel I",
+			"horario": [
+				{
+					"dia": "Lunes",
+					"hi": "7:8",
+					"hf": "16:8",
+					"horainicio": "Mon Aug 17 2015 07:08:00 GMT-0500 (SA Pacific Standard Time)",
+					"horafin": "2015-08-17T21:08:00.000Z"
+				}
+			]
+		},
+		{
+			"curso": "Manipulación de alimentos",
+			"horario": [
+				{
+					"dia": "Lunes",
+					"hi": "9:8",
+					"hf": "10:8",
+					"horainicio": "Mon Aug 17 2015",
+					"horafin": "2015-08-17T15:08:00.000Z"
+				}
+			]
+		},
+		{
+			"curso": "Cena navideña",
+			"horario": [
+				{
+					"dia": "Lunes",
+					"hi": "11:4",
+					"hf": "14:8"
+				}
+			]
+		},
+		{
+			"curso": "Maquillaje, limpieza facial y depilación con cera",
+			"horario": [
+				{
+					"dia": "Lunes",
+					"hi": "12:4",
+					"hf": "13:8"
+				}
+			]
+		},
+		{
+			"curso": "Taller de ensaladas",
+			"horario": [
+				{
+					"dia": "Jueves",
+					"hi": "15:30",
+					"hf": "20:48"
+				},
+				{
+					"dia": "Martes",
+					"hi": "13:29",
+					"hf": "15:35"
+				}
+			]
+		}
+	]
+}

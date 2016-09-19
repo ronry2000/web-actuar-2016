@@ -1,0 +1,43 @@
+{
+	"lista": [
+		{
+			"curso": "ESTOFADO",
+			"img": "ESTOFADO201637.jpg",
+			"horario": "Jueves-am",
+			"preinscritos": [
+				{
+					"nombre": "no me joda",
+					"email": "rodrigoserrano@actuartolima.com.co",
+					"telefono1": "1546546515",
+					"telefono2": "1548646532"
+				}
+			]
+		},
+		{
+			"curso": "Curso vacacional",
+			"img": "Curso_vacacional201637.png",
+			"horario": "Viernes-pm",
+			"preinscritos": [
+				{
+					"nombre": "estoy ocupado",
+					"email": "rodrigoserrano@actuartolima.com.co",
+					"telefono1": "3156987569",
+					"telefono2": "2587136"
+				}
+			]
+		},
+		{
+			"curso": "Técnicas y métodos de conservacion de alimentos",
+			"img": "Técnicas_y_métodos_de_conservacion_de_alimentos201637.jpg",
+			"horario": "Sábado-am",
+			"preinscritos": [
+				{
+					"nombre": "otro dia",
+					"email": "rodrigoserrano@actuartolima.com.co",
+					"telefono1": "55486845668",
+					"telefono2": "147986565"
+				}
+			]
+		}
+	]
+}

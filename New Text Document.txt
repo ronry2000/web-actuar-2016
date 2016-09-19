@@ -1,0 +1,162 @@
+CAMBIAR URLS EN:
+/public/templates/secondary/contactoemail
+/public/templates/secondary/preinscripcioncapacitaciones
+/public/templates/secondary/solicitudcreditoemail
+/public/templates/secondary/trabajaconnosotroshojadevidaemail
+/servidor/servidorhttp.js
+/servidor/database.js.js
+boton de compartir en facebook(pie de pagina)
+
+CAMBIAR CORREOS EN:
+/servidor/servidorhttp.js
+
+funcion localhost/contacto							linea 273
+funcion localhost/trabajaconnosotros 				linea 310
+funcion localhost/solicitarcredito 					linea 1223
+funcion localhost/proyectosycapacitacion 			linea 475
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> use admin
+> db.createUser({user:"root",pwd:"root",roles:[{role:"dbOwner",db:"admin"}]})
+
+mongod --auth --dbpath c:/data/db
+mongo -u "root" -p "root" --authenticationDatabase "admin"
+
+
+administrador|gestioncalidad|gestionhumana|capacitacion|funcionario|contenido
+- administrador                    todo el contenido
+- gestion de calidad            archivos de ISO en pdf y los formatos word y excel
+- gestion humana                trabaje con nosotros y oferta laboral
+- capacitacion                        horario cursos y todo lo de cursos de capacitacion
+- indicadores                        indicadores financieros y sociales y lineas de credito
+- funcionarios                        puede acceder a los documentos de iso y el total de la pagina  pero solo a consultar(no puede modificar nada) es un invitado
+
+
+
+		<link rel="stylesheet" href="./css/lib/video/video-js.css">
+		<link rel="stylesheet" href="./css/lib/tree-control/tree-control-attribute.css">
+		<link rel="stylesheet" href="./css/lib/tree-control/tree-control.css">
+		<link rel="stylesheet" href="./css/lib/timetable/timetablejs.css">
+		<link rel="stylesheet" href="./css/lib/jquery-ui.css">
+		<link rel="stylesheet" href="./css/estilo.css">
+		<link rel="stylesheet" href="./css/mobile.css" media="all and (max-width:800px)">
+		<link rel="stylesheet" href="./css/impresion.css" media="print">
+		<script type="text/javascript" src="./scripts/lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="./scripts/lib/jquery-ui.js"></script>
+		<script type="text/javascript" src="./scripts/lib/video/videojs5.js"></script>
+		<script type="text/javascript" src="./scripts/lib/video/videojs-ie8.min.js"></script>
+		<script type="text/javascript" src="./scripts/lib/socket.io-1.4.3.js"></script>
+		<script type="text/javascript" src="./scripts/lib/timetable.min.js"></script>
+		<script type="text/javascript" src="./scripts/lib/processing/p50422.js"></script>
+		<script type="text/javascript" src="./scripts/lib/processing/p50422.dom.js"></script>
+		<script type="text/javascript" src="./scripts/lib/angular.js"></script>
+		<script type="text/javascript" src="./scripts/lib/ocLazyLoad.js"></script>
+		<script type="text/javascript" src="./scripts/lib/angular-cookies.js"></script>
+		<script type="text/javascript" src="./scripts/lib/angular-route.js"></script>
+		<script type="text/javascript" src="./scripts/lib/angular-sanitize.js"></script>
+		<script type="text/javascript" src="./scripts/lib/maps/ng-map.min.js"></script>
+		<script type="text/javascript" src="./scripts/lib/angular-tree-control.js"></script>
+		<script type="text/javascript" src="./scripts/lib/ng-file-upload-shim.js"></script>
+		<script type="text/javascript" src="./scripts/lib/ng-file-upload.js"></script>
+		<script type="text/javascript" src="./scripts/lib/processing/angular-p5.js"></script>
+		<script type="text/javascript" src="./scripts/app.js"></script>
+		<script type="text/javascript" src="./scripts/processing/indexslider.js"></script>
+		<script type="text/javascript" src="./scripts/processing/conocenosslider.js"></script>
+		<script type="text/javascript" src="./scripts/processing/proyectosycapacitacionslider.js" ></script>
+		<script type="text/javascript" src="./scripts/processing/impactosocialslider.js"></script>
+		<script type="text/javascript" src="./scripts/logincontroller.js"></script>
+		<script type="text/javascript" src="./scripts/indexcontroller.js"></script>
+		<script type="text/javascript" src="./scripts/proyectosycapacitacioncontroller.js"></script>
+		<script type="text/javascript" src="./scripts/contactocontroller.js"></script>
+		<script type="text/javascript" src="./scripts/404errorcontroller.js"></script>
+		<script type="text/javascript" src="./scripts/conocenoscontroller.js"></script>
+		<script type="text/javascript" src="./scripts/nuestrasoficinascontroller.js"></script>
+		<script type="text/javascript" src="./scripts/lineasdecreditocontroller.js"></script>
+		<script type="text/javascript" src="./scripts/indicadorescontroller.js"></script>
+		<script type="text/javascript" src="./scripts/impactosocialcontroller.js"></script>
+		<script type="text/javascript" src="./scripts/sitemapcontroller.js"></script>
+		<script type="text/javascript" src="./scripts/trabajaconnosotroscontroller.js"></script>
+		<script type="text/javascript" src="./scripts/intranetcontroller.js"></script>
+		<script type="text/javascript" src="./scripts/solicitarcreditocontroller.js"></script>
+		
+		
+		<link rel="stylesheet" href="./min.css">
+		<link rel="stylesheet" href="./mobilemin.css" media="all and (max-width:800px)">
+		<link rel="stylesheet" href="./css/impresion.css" media="print">
+		<script type="text/javascript" src="./min.js"></script>
+		
+		
+		
+		
+		<script type="text/javascript" src="./scripts/lib/date.js"></script>
+		
+		<div class="proyectosycapacitacionSliderDivAux"></div>
+		
+		<a ng-href="https://www.facebook.com/olgalucia.correanova" target="_blank"><img ng-src="./img/logofbk3.png" style="height:35px;position:absolute;top:25px;right:1%" alt="actuar tolima" longdesc="#footerDiv"></img></a>
+				
+		
+		manifest="manifest.appcache"
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<script type="text/javascript" src="./scripts/lib/angular-ui-tree.js" ></script>
+		<link rel="stylesheet" href="./css/lib/angular-ui-tree.css" >
+		<link rel="icon" type="image/gif" href="./favicon.gif" />
+		<script type="text/javascript" src="./scripts/lib/compatibility.js" ></script>
+		<div id="stones.mp4" videojs></div>
+		!divInstEnable||
+		ng-class="$root.fbkDivFloating ? 'fbkDivFloating' : 'fbkDiv'"
+		<img id="videosInstitucionalGif" ng-show="videosInstitucionalGifShow" class="videoGif" ng-src="./img/playing.gif"></img>
+		<img id="videosPremiosGif" ng-show="videosPremiosGifShow" class="videoGif" ng-src="./img/playing.gif"></img>
+		<img id="videosCeremonia25Gif" ng-show="videosCeremonia25GifShow" class="videoGif" ng-src="./img/playing.gif"></img>
+		<div id="mapaSedeIbg"></div>
+		<a ng-href="https://www.facebook.com/groups/1571037699774341/" target="_blank" ng-show="fbkDivFloating">Capacitación Actuar Tolima</a> 
+		<span style="position:absolute;bottom:0px;left:1%;margin:0px;">Todos los derechos reservados.</span>
+		<img ng-src="./fotos/quienessomos1.jpg" width="100%" alt="actuar tolima" longdesc="#footerDiv"></img>
+		framerate<b id="framerateText" ng-model="framerateText"> </b><br></br>
+		<input type="range" id="framerateSlider" min="1" max="40" ng-model="framerateSlider" value="5" step="1" ngChange="setFramerate(this.value);actualizarValor('framerateText',this.value)" style="width:95%;"><br></br>
+		
+		<script type="text/javascript" src="./scripts/lib/maps/maps.js" ></script>
+		
+		<i ng-show="trabajaconnosotrosForm.trabajaconnosotrosFile.$error.required">*Campo requerido</i><br></br>
+		
+		<link rel="stylesheet" href="./css/lib/angular-material.min.css">
+		
+		
+		
+		<div class="conocenosSliderDivAux">
+		<div id="conocenosSliderDiv" ng-if="!!$root.conocenosSliderFotos" ng-class="activeSlider=='/conocenos' ? 'conocenosSliderDiv' : 'conocenosSliderDiv2'" ng-controller="sliderController">
+				<p5 sketch="conocenosSliderSketchFac">
+					<div id="conocenosSliderCanvasDiv"></div>
+				</p5>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

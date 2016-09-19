@@ -1,0 +1,18 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">PROYECTOS Y CAPACITACIÓN</span></h1>
+<div class="proyectosycapacitacionSloganDiv">
+	<h2 style="font-size:200%;margin-bottom:0px;position:relative;margin-left:auto;margin-right:auto;width:75%">El crecimiento de nuestra empresa se sustenta en el progreso de nuestros clientes</h2>
+</div>
+<div  class="proyectosycapacitacionDatepickerDiv">
+	<span style="font-size:150%">Semana {{selectedWeek}} - {{selectedYear}}</span>
+	<div class="datepicker"></div>
+</div>
+<div id="proyectosycapacitacionTab" style="border-bottom:1px solid rgba(170,170,170,1);clear:both;">
+	<div ng-class="$root.proyectosycapacitacionTabSelected=='cursos' ? 'tabButtonSelected' : 'tabButton'" ng-click="selectTabItem('cursos')">Cursos</div>
+	<div ng-class="$root.proyectosycapacitacionTabSelected=='horarios' ? 'tabButtonSelected' : 'tabButton'" ng-click="selectTabItem('horarios')" >Horarios</div>
+	<div ng-class="$root.proyectosycapacitacionTabSelected=='preinscripcion' ? 'tabButtonSelected' : 'tabButton'" ng-click="selectTabItem('preinscripcion')" >Pre-inscripción</div>
+</div>
+
+<div id="proyectosycapacitacionDiv" ng-include="proyectosycapacitacionTemplate" style="clear:both;">
+	
+</div>
+<div style="clear:both;"></div>

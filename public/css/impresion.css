@@ -1,0 +1,27 @@
+body{
+	background:rgba(225,225,225,1);	
+}
+.indexSliderDiv{
+	display:none;
+}
+.indexSliderDivAux{
+	display:none;
+}
+.conocenosSliderDiv{
+	display:none;
+}
+.conocenosSliderDivAux{
+	display:none;
+}
+.proyectosycapacitacionSliderDiv{
+	display:none;
+}
+.proyectosycapacitacionSliderDivAux{
+	display:none;
+}
+.impactosocialSliderDiv{
+	display:none;
+}
+.impactosocialSliderDivAux{
+	display:none;
+}

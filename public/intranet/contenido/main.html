@@ -1,0 +1,17 @@
+<div id="intranetIndexDiv">
+	<table class="intranetUserTable">
+		<tr >
+			<td ><h2 style="text-align:center">{{$root.user.name}}</h2></td>
+		</tr>
+		<tr ng-if="$root.user.accesibilidad=='administrador' || $root.user.accesibilidad=='contenido'">
+			<td class="intranetTableTd"><a ng-href="./intranet/contenido/indicadores"><div><h3 style="margin:0px;padding-top:20px;padding-bottom:20px;">Indicadores</h3></div></a></td>
+		</tr>
+		<tr ng-if="$root.user.accesibilidad=='administrador' || $root.user.accesibilidad=='contenido'">
+			<td class="intranetTableTd"><a ng-href="./intranet/contenido/lineasdecredito"><div><h3 style="margin:0px;padding-top:20px;padding-bottom:20px;">Líneas de crédito</h3></div></a></td>
+		</tr>
+	</table>
+</div>
+
+
+
+<div style="clear:both;"></div>

@@ -1,0 +1,63 @@
+<div oc-lazy-load="['./intranet/registro/scripts/intranetregistrocontroller.js']">
+<div ng-controller="registroController">
+	<div id="registroDiv" style="clear:both;" >
+		<form id="registroForm"  ng-submit="registro()">
+			<table id="registroTable">
+				<tr>
+					<td class="registroTableTd">Nombre<em style="color:red">*</em></td>
+					<td><input required type="text" id="registroNombre" ng-model="registroNombre" name="registroNombre" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{1,80}$"></td>
+				</tr>
+				<tr>
+					<td class="registroTableTd">Correo electrónico<em style="color:red">*</em></td>
+					<td><input required type="email" id="registroEmail" ng-model="registroEmail" name="registroEmail" pattern="^[a-z0-9._%+-]{1,50}@[a-z0-9.-]{1,50}\.[a-z]{2,6}$"></td>
+				</tr>
+				<tr>
+					<td class="registroTableTd">Accesibilidad<em style="color:red">*</em></td>
+					<td><input type="radio" name="registroAccesibilidad" ng-model="registroAccesibilidad" value="administrador" style="vertical-align:middle;"> administrador<br>
+						<input type="radio" name="registroAccesibilidad" ng-model="registroAccesibilidad" value="gestioncalidad" style="vertical-align:middle;"> gestioncalidad<br>
+						<input type="radio" name="registroAccesibilidad" ng-model="registroAccesibilidad" value="gestionhumana" style="vertical-align:middle;"> gestionhumana<br>
+						<input type="radio" name="registroAccesibilidad" ng-model="registroAccesibilidad" value="capacitacion" style="vertical-align:middle;"> capacitacion<br>
+						<input type="radio" name="registroAccesibilidad" ng-model="registroAccesibilidad" value="funcionario" style="vertical-align:middle;"> funcionario<br>
+						<input type="radio" name="registroAccesibilidad" ng-model="registroAccesibilidad" value="contenido" style="vertical-align:middle;"> contenido<br>
+						</td>
+				</tr>
+				<tr>
+					<td class="registroTableTd">Contraseña<em style="color:red">*</em></td>
+					<td><input required type="text" id="registroPassword"  ng-model="registroPassword" name="registroPassword" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{4,20}$"></td>
+				</tr>
+				<tr>
+					<td class="registroTableTd">Confirmar contraseña<em style="color:red">*</em></td>
+					<td><input required type="text" id="registroPassword2" ng-model="registroPassword2"  name="registroPassword2" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{4,20}$"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" class="submitButton" ></input></td>
+				</tr>
+			</table>
+			<div id="registroErrorDiv" style="max-width:100%;overflow:auto;"></div>
+		</form>
+	</div>
+	
+	<h3 class="registroUsuariosListaDiv" style="margin:0px;">Usuarios</h3>
+	<div class="registroUsuariosListaDiv" ng-if="!!registroLista">
+			<table style="width:100%;background:rgba(235,235,241,1)">
+				<tr>
+					<th style="background:rgba(230,230,230,1)">Nombre</th>
+					<th style="background:rgba(230,230,230,1)">Email</th>
+					<th style="background:rgba(230,230,230,1)">Accesibilidad</th>
+				</tr>
+				<tbody ng-repeat="user in registroLista">
+					<tr>
+						<td style="background:rgba(250,250,250,1);white-space:nowrap"><img ng-src="./img/delete.png" ng-click="deleteUser(user.name,user.email)" style="cursor:pointer" height="10px"></img><h4 style="margin:0px;display:inline-block">&nbsp{{user.name}}</h4></td>
+						<td style="background:rgba(240,240,240,1)"><h4 style="margin:0px;display:inline-block">&nbsp{{user.email}}</h4></td>
+						<td style="background:rgba(250,250,250,1);"><h4 style="margin:0px;display:inline-block">&nbsp{{user.accesibilidad}}</h4></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<div style="clear:both;"></div>
+</div>

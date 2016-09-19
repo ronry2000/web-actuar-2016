@@ -1,0 +1,84 @@
+<div oc-lazy-load="['./intranet/capacitaciones/scripts/intranetcapacitacionescontroller.js']">
+<div ng-controller="intranetcapacitacionesController" style="margin-left:1%;margin-right:1%">
+	<div class="intranetCapacitacionesTableDiv">
+		<form ng-submit="agregarCurso()" name="intranetCapacitacionesForm">
+			<table class="intranetCapacitacionesTable">
+				<tr>
+					<td class="intranetCapacitacionesTableTd"> Area<em style="color:red">*</em></td>
+					<td><input type="text" required name="intranetCursoArea2" id="intranetCursoArea2" ng-init="intranetCursoArea=''" ng-model="intranetCursoArea" ng-change="itemChanged(intranetCursoArea)" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-Z0-9\s-]{1,300}$" style="width:182px;border-radius:5px 0px 0px 5px;border-right:0px"><select required id="intranetCursoArea" ng-model="intranetCursoArea" name="intranetCursoArea" style="width:18px;border-radius:0px 5px 5px 0px;border-left:0px;padding-left:0px;padding-right:0px" ng-change="itemChanged(intranetCursoArea)">
+						<option value=""></option>
+						<option ng-selected="{{$root.intranetCursoArea==lista.area}}" ng-repeat="lista in $root.proyectosycapacitacionLista.lista"  value="{{lista.area}}">{{lista.area}}</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="intranetCapacitacionesTableTd"> URL area<em style="color:red">*</em></td>
+					<td><input type="text" required name="intranetCursoGrupo" id="intranetCursoGrupo" ng-model="intranetCursoGrupo" placeholder="sin espacios ni tildes" pattern="^[a-z0-9]{1,80}$" style="width:200px"></td>
+				</tr>
+				<tr>
+					<td class="intranetCapacitacionesTableTd"> Curso<em style="color:red">*</em></td>
+					<td><input type="text" required name="intranetCursoTitulo" id="intranetCursoTitulo" ng-model="intranetCursoTitulo" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-Z0-9\s(),.]{1,5000}$" style="width:200px"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" class="submitButton"></td>
+				</tr>
+			</table>
+		</form>
+		<p style="margin:0px;color:red" ng-show="capacitacionesFile.$error.maxSize">Archivo demasiado grande {{intranetHorarioFile.size / 1000000|number:1}}MB: max 1MB</p>
+		<div id="intranetCapacitacionesErrorDiv" style="max-width:100%;overflow:auto;"></div>
+		<div class="separador"></div>
+		<div style="white-space:nowrap;margin-top:10px">
+			<h4 style="margin:0px;display:inline-block">Fotos</h4><br>
+			<div ngf-select="uploadFoto($file)" ng-model="capacitacionesFile" class="select-box" ngf-pattern="'image/*'" accept="image/*" ngf-max-size="1MB">Seleccionar archivo jpg <br></br>max 520 pixels alto</div>
+		</div>
+		<div ng-repeat="foto in $root.proyectosycapacitacionSliderFotos.fotos">
+			<li style="white-space:nowrap;list-style-type:circle;" ng-mouseenter="fotoHovered(foto)" ng-mouseleave="fotoHovered(foto)">
+				<a ng-href="./fotos/proyectosycapacitacion/{{foto}}" target="_blank"><p style="margin-top:2px;margin-bottom:2px;display:inline-block;white-space:normal">&nbsp{{foto}}</p></a>
+				<img ng-src="./img/delete.png" ng-click="deleteFoto(foto)" style="cursor:pointer;vertical-align:middle;margin-left:5px;" height="15px" ng-show="intranetCapacitacionesFotoHover==foto"></img>
+			</li>
+		</div>
+	</div>
+	
+	
+	<div class="intranetCapacitacionesListaDiv">
+		<div style="white-space:nowrap">
+			<h3 style="margin-top:0px;display:inline-block">{{$root.intranetCursoArea}}</h3>
+			<img ng-src="./img/delete.png" ng-if="!!$root.intranetCursoArea" ng-click="deleteArea($root.intranetCursoArea)" style="cursor:pointer;vertical-align:top;margin-left:5px;" height="20px"></img>
+		</div>
+		<div ng-repeat="lista in $root.proyectosycapacitacionLista.lista | filter:areaFilter">
+			<div ng-repeat="lista2 in lista.items" style="white-space:nowrap">
+				<li style="white-space:nowrap;padding-top:5px;padding-bottom:5px;list-style-type:circle;" ng-mouseenter="itemHovered(lista2.titulo)" ng-mouseleave="itemHovered(lista2.titulo)">
+					<h4 style="margin:0px;display:inline;white-space:normal">&nbsp{{lista2.titulo}}</h4>
+					<img ng-src="./img/delete.png" ng-click="deleteCurso(lista2.titulo)" style="cursor:pointer;vertical-align:top;margin-left:5px;" height="15px" ng-show="lista2.titulo==intranetCapacitacionesHover"></img>
+				</li>
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="intranetCapacitacionesListaDiv" style="min-height:0px"><div class="separador"></div></div>
+	<div class="intranetCapacitacionesListaDiv">
+		<table style="width:100%;background:rgba(235,235,241,1);"  ng-if="!!$root.proyectosycapacitacionCursossugeridos">
+			<tr>
+				<td colspan="5"><p style="margin:0px;text-align:center;font-family:appBold;background:rgba(230,230,230,1)">Cursos sugeridos</p></td>
+			</tr>
+			<tr>
+				<th style="background:rgba(230,230,230,1);width:20%">curso</th>
+				<th style="background:rgba(230,230,230,1);width:20%">nombre</th>
+				<th style="background:rgba(230,230,230,1);width:20%">telefono1</th>
+				<th style="background:rgba(230,230,230,1);width:20%">telefono2</th>
+				<th style="background:rgba(230,230,230,1);width:20%">email</th>
+			</tr>
+			<tr ng-repeat="lista in $root.proyectosycapacitacionCursossugeridos.lista" >
+				<td style="background:rgba(240,240,240,1);width:20%;word-wrap:break-word;word-break:break-word;white-space:nowrap"><img ng-src="./img/delete.png" ng-click="deleteCursosugerido(lista.curso,lista.nombre)" style="cursor:pointer;vertical-align:top;" height="15px"></img><span style="white-space:normal">{{lista.curso}}</span></td>
+				<td style="background:rgba(250,250,250,1);width:20%;word-wrap:break-word;word-break:break-word;">{{lista.nombre}}</td>
+				<td style="background:rgba(240,240,240,1);width:20%;word-wrap:break-word;word-break:break-word;">{{lista.telefono1}}</td>
+				<td style="background:rgba(250,250,250,1);width:20%;word-wrap:break-word;word-break:break-word;">{{lista.telefono2}}</td>
+				<td style="background:rgba(240,240,240,1);width:20%;word-wrap:break-word;word-break:break-word;">{{lista.email}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div style="clear:both;"></div>
+</div>

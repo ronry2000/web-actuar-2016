@@ -1,0 +1,16 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">LÍNEAS DE CRÉDITO</span></h1>
+<a ng-href="./solicitarcredito" hreflang="es" rel="bookmark">
+	<div class="lineasdecreditoSolicitarCredito">
+		<span style="vertical-align:middle;color:white;white-space:normal;">Solicite su crédito aquí</span>
+	</div>
+</a>
+<div id="lineasdecreditoDiv" ng-if="!!$root.lineasdecreditoLista">
+	<div ng-class="($index+1)%3==0 ? 'lineasdecreditoItemMultiplo3' : 'lineasdecreditoItem'" ng-repeat="lista in $root.lineasdecreditoLista.lista track by $index" ng-style="$root.lineasdecreditoSelected!=lista.linea ? {'background-image':'url(./fotos/{{lista.img}})'} : {'background-image':'url(./fotos/{{lista.img2}})'}" >
+		<a href="javascript:void(0)" ng-click="itemClicked(lista.linea)"><h2 ng-class="{'lineasdecreditoItemTittle': $root.lineasdecreditoSelected!=lista.linea , 'lineasdecreditoItemTittleSelected': $root.lineasdecreditoSelected==lista.linea} ">{{lista.linea}}</h2></a>
+		<p ng-class="{'lineasdecreditoItemDesc': $root.lineasdecreditoSelected!=lista.linea , 'lineasdecreditoItemDescSelected': $root.lineasdecreditoSelected==lista.linea} " ng-bind-html="lista.desc | to_trusted"></p>
+		<a href="javascript:void(0)" ng-click="itemClicked(lista.linea)"><div ng-class="{'lineasdecreditoItemVermas': $root.lineasdecreditoSelected!=lista.linea , 'lineasdecreditoItemVermasOculto': $root.lineasdecreditoSelected==lista.linea} "><span style="vertical-align:middle;color:white">Ver más</span></div></a>
+	</div>
+</div>
+
+<div style="clear:both;"></div>
+

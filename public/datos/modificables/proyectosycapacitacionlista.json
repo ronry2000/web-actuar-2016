@@ -1,0 +1,130 @@
+{
+	"lista": [
+		{
+			"area": "Culinaria",
+			"grupo": "culinaria",
+			"items": [
+				{
+					"titulo": "Cremas y sopas(Crema de sopa de pollo con maiz, crema de tomates asados, crema de papa, apio y queso, sopa de cebolla caramelizada con croutones)"
+				},
+				{
+					"titulo": "Galleteria Fina(galleta rellena de mora, risada y alfajores)"
+				},
+				{
+					"titulo": "Arepas Vegetarianas(Arepa de aguacate y pico de gallo, arepa de queso y tomate, arepa de champiñon, maiz y repollo dulce)"
+				},
+				{
+					"titulo": "Cupcakes Decorados"
+				},
+				{
+					"titulo": "Manipulacion de alimentos"
+				},
+				{
+					"titulo": "ESTOFADO"
+				}
+			]
+		},
+		{
+			"area": "Curso vacacional niños",
+			"grupo": "vacacional",
+			"items": [
+				{
+					"titulo": "Curso vacacional semanal"
+				},
+				{
+					"titulo": "Curso vacacional"
+				}
+			]
+		},
+		{
+			"area": "Salud y vida",
+			"grupo": "saludyvida",
+			"items": [
+				{
+					"titulo": "Combinación de alimentos para mejorar la salud"
+				},
+				{
+					"titulo": "Comida saludable"
+				},
+				{
+					"titulo": "Técnicas y métodos de conservacion de alimentos"
+				}
+			]
+		},
+		{
+			"area": "Area de manualidades",
+			"grupo": "manualidades",
+			"items": [
+				{
+					"titulo": "Cojin Bordado Corazones"
+				},
+				{
+					"titulo": "Sandalias Decoradas"
+				},
+				{
+					"titulo": "Cuaderno Minions y Carpeta Niña"
+				},
+				{
+					"titulo": "Guitarra Reloj"
+				},
+				{
+					"titulo": "Cuadro Niña Patchwork"
+				},
+				{
+					"titulo": "Alcancia Country"
+				},
+				{
+					"titulo": "Balacas"
+				},
+				{
+					"titulo": "Cojin Muñeca"
+				}
+			]
+		},
+		{
+			"area": "Area de productos de aseo",
+			"grupo": "productosdeaseo",
+			"items": [
+				{
+					"titulo": "Desengrasante y shampoo sin sal"
+				},
+				{
+					"titulo": "Ambientador pisos y jabon losa"
+				},
+				{
+					"titulo": "Jabon de ropa liquido y suavisante"
+				},
+				{
+					"titulo": "Productos de belleza"
+				},
+				{
+					"titulo": "Productos de aseo"
+				}
+			]
+		},
+		{
+			"area": "Area administrativa",
+			"grupo": "administrativa",
+			"items": [
+				{
+					"titulo": "Curso Administrativo"
+				},
+				{
+					"titulo": "Educación Financiera"
+				},
+				{
+					"titulo": "Servicio al Cliente"
+				}
+			]
+		},
+		{
+			"area": "Belleza",
+			"grupo": "belleza",
+			"items": [
+				{
+					"titulo": "MANICURE BASICO"
+				}
+			]
+		}
+	]
+}

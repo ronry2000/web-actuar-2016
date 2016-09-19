@@ -1,0 +1,51 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" height="50px" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">MAPA DEL SITIO</span></h1>
+<div id="sitemapDiv" ng-if="!!$root.sitemapLista">
+	<treecontrol class="tree-light"
+		tree-model="sitemapLista.lista"
+		options="treeOptions"
+		on-selection="showSelected(node)"
+		selected-node="selectedNodes"
+		expanded-nodes="expandedNodes">
+		<a ng-href="{{node.loc}}" hreflang="es" rel="bookmark"><img ng-src="./img/lib/tree-control/file.png" alt="actuar tolima" longdesc="#footerDiv"></img><span class="sitemapItem">{{node.desc}}</span></a>
+	</treecontrol>
+	
+	
+	<!--Nested node template
+	<div ui-tree data-nodrop-enabled="true" data-drag-enabled="false">
+	  <ol ui-tree-nodes="sitemapLista.lista.nodes" ng-model="sitemapLista.lista">
+		<li ng-repeat="item in sitemapLista.lista" ui-tree-node>
+		  <div ui-tree-handle>
+			{{item.loc}}
+		  </div>
+		  <ol ui-tree-nodes="" ng-model="sitemapLista.lista.nodes">
+			<li ng-repeat="subItem in sitemapLista.lista.nodes" ui-tree-node>
+			  <div ui-tree-handle>
+				{{subItem.loc}}
+			  </div>
+			</li>
+		  </ol>
+		</li>
+	  </ol>
+	</div>
+	
+	
+	  
+	<script type="text/ng-template" id="nodes_renderer.html">
+	  <div ui-tree-handle>
+		{{node.loc}}
+	  </div>
+	  <ol ui-tree-nodes="" ng-model="node.nodes">
+		<li ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer.html'">
+		</li>
+	  </ol>
+	</script>
+	<div ui-tree>
+	  <ol ui-tree-nodes="" ng-model="sitemapLista.lista" id="tree-root">
+		<li ng-repeat="node in sitemapLista.lista" ui-tree-node ng-include="'nodes_renderer.html'"></li>
+	  </ol>
+	</div>
+-->
+
+
+</div>
+<div style="clear:both;"></div>

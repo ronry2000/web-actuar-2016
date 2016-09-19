@@ -1,0 +1,42 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">LÍNEAS DE CRÉDITO</span></h1>
+<div id="solicitarcreditoTableDiv">
+	<h3>SOLICITE AQUÍ SU CRÉDITO</h3>
+	<p>Si requieres alguno de nuestros créditos por favor diligencia los siguientes datos, uno de nuestros asesores se pondrá en contacto contigo.</p>
+	<form ng-submit="solicitar()">
+	<table class="solicitarcreditoTable">
+		<tr class="solicitarcreditoTableRow">
+			<td class="solicitarcreditoTableTd"> Nombre<em style="color:red">*</em></td>
+			<td><input type="text" required name="solicitarcreditoNombre" id="solicitarcreditoNombre" ng-model="solicitarcreditoNombre" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{1,80}$" style="width:200px"></td>
+		</tr>
+		<tr class="solicitarcreditoTableRow">
+			<td class="solicitarcreditoTableTd"> Ciudad<em style="color:red">*</em></td>
+			<td><input type="text" required name="solicitarcreditoCiudad" id="solicitarcreditoCiudad" ng-model="solicitarcreditoCiudad" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{0,80}$" style="width:200px"></td>
+		</tr>
+		<tr class="solicitarcreditoTableRow">
+			<td class="solicitarcreditoTableTd"> Dirección<em style="color:red">*</em></td>
+			<td><input type="text" required name="solicitarcreditoDireccion" id="solicitarcreditoDireccion" ng-model="solicitarcreditoDireccion" placeholder="" pattern="^[áàãâäéèêëíìîïóòõôöúùûüÁÀÃÂÄÉÈÊËÍÌÎÏÓÒÕÖÔÚÙÛÜÝýỲỳŶŷŸÿỸỹçÇñÑa-zA-z0-9.:,;%=\/*+-_?¿¡!$\s@]{0,80}$" style="width:200px"></td>
+		</tr>
+		<tr class="solicitarcreditoTableRow">
+			<td class="solicitarcreditoTableTd"> Teléfono<em style="color:red">*</em></td>
+			<td><input type="tel" required name="solicitarcreditoTelefono" id="solicitarcreditoTelefono" ng-model="solicitarcreditoTelefono" placeholder="Fijo o Celular" pattern="^[(0-9+\s())(e?x?t?(\d*))]{7,50}$" style="width:200px"></td>
+		</tr>
+		<tr class="solicitarcreditoTableRow">
+			<td class="solicitarcreditoTableTd" > Correo electrónico</td>
+			<td><input type="email" name="solicitarcreditoEmail" id="solicitarcreditoEmail" ng-model="solicitarcreditoEmail" placeholder="" pattern="^[a-z0-9._%+-]{1,50}@[a-z0-9.-]{1,50}\.[a-z]{2,6}$" style="width:200px"></td>
+		</tr>
+		<tr class="solicitarcreditoTableRow">
+			<td class="solicitarcreditoTableTd"> Mensaje<em style="color:red">*</em></td>
+			<td ><textarea required name="solicitarcreditoMensaje"  ng-model="solicitarcreditoMensaje" placeholder="" style="width:200px;min-width:200px;max-width:500px;height:120px;" ></textarea></td>
+		</tr>
+		<tr class="solicitarcreditoTableRow">
+			<td></td>
+			<td><input type="submit" class="submitButton" ></input></td>
+		</tr>
+	</table>
+	</form>
+	<div id="solicitarcreditoErrorDiv" style="max-width:100%;overflow:auto;"></div>
+	
+</div>
+
+
+<div style="clear:both;"></div>

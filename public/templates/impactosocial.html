@@ -1,0 +1,37 @@
+<h1 class="sectionTittle"><img ng-src="./img/logo.png" style="vertical-align:middle" alt="actuar tolima" longdesc="#footerDiv"></img><span style="vertical-align:middle">IMPACTO SOCIAL</span></h1>
+
+<div id="impactosocialDescDiv">
+	<p style="text-align:justify;margin:0px;">
+	Como complemento a su actividad misional, Actuar ha apoyado diferentes programas de gran impacto social en la región que requieren de la solidaridad de instituciones como 
+	la nuestra. Estos programas están encaminados a la atención de la población en situación de vulnerabilidad como los habitantes de la calle, población infantil,
+	ayuda al adulto mayor y poblaciones afectadas por desastres naturales.
+	</p>
+</div>
+<div class="impactosocialListaDiv" ng-if="!!$root.impactosocialLista && !!$root.impactosocialSliderFotos">
+		<div  ng-repeat="lista in $root.impactosocialLista.lista">
+		<div class="impactosocialDiv" ng-click="selectItem(lista.grupo)">
+				<h3 style="color:white;margin:0px;">{{lista.organizacion}}</h3>
+			</div>
+		
+		<div id="impactosocialOrgDescDiv" ><p ng-show="$root.impactosocialSelected==lista.grupo" class="impactosocialDivDesc" ng-bind-html="lista.desc"></p></div>
+		</div>
+		
+		
+</div>
+<div class="impactosocialSliderDivAux">
+	<h2 id="impactosocialOrgTittl" style="text-align:center;width:100%;margin:0px;"></h2>
+	<div id="impactosocialSliderDiv" ng-if="!!$root.impactosocialSliderFotos" ng-class="activeSlider=='/impactosocial' ? 'impactosocialSliderDiv' : 'impactosocialSliderDiv2'" ng-controller="sliderController">
+				<p5 sketch="impactosocialSliderSketchFac">
+					<div id="impactosocialSliderCanvasDiv"></div>
+				</p5>
+			</div>
+</div>
+
+
+
+
+
+
+
+
+<div style="clear:both;"></div>
